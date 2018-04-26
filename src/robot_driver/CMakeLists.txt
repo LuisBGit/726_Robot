@@ -121,6 +121,10 @@ include_directories(
 #   src/${PROJECT_NAME}/robot_driver.cpp
 # )
 
+add_executable( pioneer_laser_node src/pioneerLaser.cpp)
+target_link_libraries(pioneer_laser_node ${catkin_LIBRARIES})
+add_dependencies(pioneer_laser_node ${catkin_EXPORTED_TARGETS})
+
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
 ## either from message generation or dynamic reconfigure

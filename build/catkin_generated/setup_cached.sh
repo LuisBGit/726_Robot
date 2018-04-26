@@ -7,5 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PKG_CONFIG_PATH="/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD="/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build"
