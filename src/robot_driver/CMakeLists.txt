@@ -125,6 +125,11 @@ add_executable( pioneer_laser_node src/pioneerLaser.cpp)
 target_link_libraries(pioneer_laser_node ${catkin_LIBRARIES})
 add_dependencies(pioneer_laser_node ${catkin_EXPORTED_TARGETS})
 
+
+add_executable(IamPub src/IamPub.cpp)
+target_link_libraries(IamPub ${catkin_LIBRARIES})
+add_dependencies(IamPub ${catkin_EXPORTED_TARGETS})
+
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
 ## either from message generation or dynamic reconfigure

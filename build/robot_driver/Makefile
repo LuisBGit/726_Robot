@@ -66,6 +66,18 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -120,18 +132,6 @@ install/strip: preinstall
 install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -331,6 +331,21 @@ roscpp_generate_messages_nodejs/fast:
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 # Convenience name for target.
+robot_driver/CMakeFiles/IamPub.dir/rule:
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/IamPub.dir/rule
+.PHONY : robot_driver/CMakeFiles/IamPub.dir/rule
+
+# Convenience name for target.
+IamPub: robot_driver/CMakeFiles/IamPub.dir/rule
+
+.PHONY : IamPub
+
+# fast build rule for target.
+IamPub/fast:
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamPub.dir/build.make robot_driver/CMakeFiles/IamPub.dir/build
+.PHONY : IamPub/fast
+
+# Convenience name for target.
 robot_driver/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
 	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 .PHONY : robot_driver/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
@@ -405,6 +420,33 @@ pioneer_laser_node/fast:
 	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/pioneer_laser_node.dir/build.make robot_driver/CMakeFiles/pioneer_laser_node.dir/build
 .PHONY : pioneer_laser_node/fast
 
+src/IamPub.o: src/IamPub.cpp.o
+
+.PHONY : src/IamPub.o
+
+# target to build an object file
+src/IamPub.cpp.o:
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamPub.dir/build.make robot_driver/CMakeFiles/IamPub.dir/src/IamPub.cpp.o
+.PHONY : src/IamPub.cpp.o
+
+src/IamPub.i: src/IamPub.cpp.i
+
+.PHONY : src/IamPub.i
+
+# target to preprocess a source file
+src/IamPub.cpp.i:
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamPub.dir/build.make robot_driver/CMakeFiles/IamPub.dir/src/IamPub.cpp.i
+.PHONY : src/IamPub.cpp.i
+
+src/IamPub.s: src/IamPub.cpp.s
+
+.PHONY : src/IamPub.s
+
+# target to generate assembly for a file
+src/IamPub.cpp.s:
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamPub.dir/build.make robot_driver/CMakeFiles/IamPub.dir/src/IamPub.cpp.s
+.PHONY : src/IamPub.cpp.s
+
 src/pioneerLaser.o: src/pioneerLaser.cpp.o
 
 .PHONY : src/pioneerLaser.o
@@ -439,6 +481,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... list_install_components"
+	@echo "... install"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_eus"
@@ -452,6 +495,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_nodejs"
+	@echo "... IamPub"
 	@echo "... test"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_lisp"
@@ -460,7 +504,9 @@ help:
 	@echo "... pioneer_laser_node"
 	@echo "... install/local"
 	@echo "... install/strip"
-	@echo "... install"
+	@echo "... src/IamPub.o"
+	@echo "... src/IamPub.i"
+	@echo "... src/IamPub.s"
 	@echo "... src/pioneerLaser.o"
 	@echo "... src/pioneerLaser.i"
 	@echo "... src/pioneerLaser.s"

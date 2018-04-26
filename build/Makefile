@@ -517,6 +517,19 @@ roscpp_generate_messages_nodejs/fast:
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 #=============================================================================
+# Target rules for targets named IamPub
+
+# Build rule for target.
+IamPub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 IamPub
+.PHONY : IamPub
+
+# fast build rule for target.
+IamPub/fast:
+	$(MAKE) -f robot_driver/CMakeFiles/IamPub.dir/build.make robot_driver/CMakeFiles/IamPub.dir/build
+.PHONY : IamPub/fast
+
+#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_nodejs
 
 # Build rule for target.
@@ -1557,6 +1570,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_nodejs"
+	@echo "... IamPub"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_eus"

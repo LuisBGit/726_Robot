@@ -99,6 +99,7 @@
 /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/slam_gmapping/slam_gmapping/CMakeFiles/test.dir
 /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/slam_gmapping/slam_gmapping/CMakeFiles/edit_cache.dir
 /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/robot_driver/CMakeFiles/list_install_components.dir
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/robot_driver/CMakeFiles/install.dir
 /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/robot_driver/CMakeFiles/std_msgs_generate_messages_py.dir
 /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/robot_driver/CMakeFiles/roscpp_generate_messages_py.dir
 /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
@@ -112,6 +113,7 @@
 /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
 /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
 /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/robot_driver/CMakeFiles/roscpp_generate_messages_nodejs.dir
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/robot_driver/CMakeFiles/IamPub.dir
 /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/robot_driver/CMakeFiles/test.dir
 /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/robot_driver/CMakeFiles/std_msgs_generate_messages_nodejs.dir
 /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/robot_driver/CMakeFiles/roscpp_generate_messages_lisp.dir
@@ -120,7 +122,6 @@
 /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/robot_driver/CMakeFiles/pioneer_laser_node.dir
 /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/robot_driver/CMakeFiles/install/local.dir
 /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/robot_driver/CMakeFiles/install/strip.dir
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/robot_driver/CMakeFiles/install.dir
 /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/slam_gmapping/gmapping/CMakeFiles/install.dir
 /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/slam_gmapping/gmapping/CMakeFiles/edit_cache.dir
 /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/slam_gmapping/gmapping/CMakeFiles/_run_tests_gmapping_rostest_test_basic_localization_upside_down.launch.dir

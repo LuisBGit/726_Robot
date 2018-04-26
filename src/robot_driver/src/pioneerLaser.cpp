@@ -24,7 +24,7 @@ for(int j = 0; j < rangeDataNum; ++j) // Go through the laser data
 if( laserScanData->ranges[j] < 0.5 )  // If there is an object within 0.5m
 	{
 		velocityCommand.linear.x = 0;   // stop forward movement
-		velocityCommand.angular.z = 0.1; // turn left
+		velocityCommand.angular.z = 50; // turn left
 		break;
 	}
 }}
