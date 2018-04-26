@@ -78,17 +78,6 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -99,6 +88,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # Special rule for the target test
 test:
@@ -420,6 +420,21 @@ pioneer_laser_node/fast:
 	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/pioneer_laser_node.dir/build.make robot_driver/CMakeFiles/pioneer_laser_node.dir/build
 .PHONY : pioneer_laser_node/fast
 
+# Convenience name for target.
+robot_driver/CMakeFiles/IamSub.dir/rule:
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/IamSub.dir/rule
+.PHONY : robot_driver/CMakeFiles/IamSub.dir/rule
+
+# Convenience name for target.
+IamSub: robot_driver/CMakeFiles/IamSub.dir/rule
+
+.PHONY : IamSub
+
+# fast build rule for target.
+IamSub/fast:
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamSub.dir/build.make robot_driver/CMakeFiles/IamSub.dir/build
+.PHONY : IamSub/fast
+
 src/IamPub.o: src/IamPub.cpp.o
 
 .PHONY : src/IamPub.o
@@ -446,6 +461,33 @@ src/IamPub.s: src/IamPub.cpp.s
 src/IamPub.cpp.s:
 	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamPub.dir/build.make robot_driver/CMakeFiles/IamPub.dir/src/IamPub.cpp.s
 .PHONY : src/IamPub.cpp.s
+
+src/IamSub.o: src/IamSub.cpp.o
+
+.PHONY : src/IamSub.o
+
+# target to build an object file
+src/IamSub.cpp.o:
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamSub.dir/build.make robot_driver/CMakeFiles/IamSub.dir/src/IamSub.cpp.o
+.PHONY : src/IamSub.cpp.o
+
+src/IamSub.i: src/IamSub.cpp.i
+
+.PHONY : src/IamSub.i
+
+# target to preprocess a source file
+src/IamSub.cpp.i:
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamSub.dir/build.make robot_driver/CMakeFiles/IamSub.dir/src/IamSub.cpp.i
+.PHONY : src/IamSub.cpp.i
+
+src/IamSub.s: src/IamSub.cpp.s
+
+.PHONY : src/IamSub.s
+
+# target to generate assembly for a file
+src/IamSub.cpp.s:
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamSub.dir/build.make robot_driver/CMakeFiles/IamSub.dir/src/IamSub.cpp.s
+.PHONY : src/IamSub.cpp.s
 
 src/pioneerLaser.o: src/pioneerLaser.cpp.o
 
@@ -482,12 +524,12 @@ help:
 	@echo "... depend"
 	@echo "... list_install_components"
 	@echo "... install"
+	@echo "... rebuild_cache"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... edit_cache"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... rebuild_cache"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_cpp"
@@ -503,10 +545,14 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... pioneer_laser_node"
 	@echo "... install/local"
+	@echo "... IamSub"
 	@echo "... install/strip"
 	@echo "... src/IamPub.o"
 	@echo "... src/IamPub.i"
 	@echo "... src/IamPub.s"
+	@echo "... src/IamSub.o"
+	@echo "... src/IamSub.i"
+	@echo "... src/IamSub.s"
 	@echo "... src/pioneerLaser.o"
 	@echo "... src/pioneerLaser.i"
 	@echo "... src/pioneerLaser.s"
