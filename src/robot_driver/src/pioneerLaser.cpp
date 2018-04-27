@@ -17,7 +17,7 @@ void laserScanCallback(const sensor_msgs::LaserScan::ConstPtr& laserScanData)
 float rangeDataNum = 1 + (laserScanData->angle_max - laserScanData->angle_min)  / (laserScanData->angle_increment);
 
 //move forward
-velocityCommand.linear.x = 0.1;
+velocityCommand.linear.x = 0.0;
 velocityCommand.angular.z = 0.0;
 for(int j = 0; j < rangeDataNum; ++j) // Go through the laser data
 {
