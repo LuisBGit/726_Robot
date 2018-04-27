@@ -346,21 +346,6 @@ IamPub/fast:
 .PHONY : IamPub/fast
 
 # Convenience name for target.
-robot_driver/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-.PHONY : robot_driver/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_nodejs: robot_driver/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : std_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-std_msgs_generate_messages_nodejs/fast:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make robot_driver/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-.PHONY : std_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
 robot_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
 	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : robot_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
@@ -435,6 +420,36 @@ IamSub/fast:
 	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamSub.dir/build.make robot_driver/CMakeFiles/IamSub.dir/build
 .PHONY : IamSub/fast
 
+# Convenience name for target.
+robot_driver/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+.PHONY : robot_driver/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_nodejs: robot_driver/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : std_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+std_msgs_generate_messages_nodejs/fast:
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make robot_driver/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+.PHONY : std_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+robot_driver/CMakeFiles/dataProcess.dir/rule:
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/dataProcess.dir/rule
+.PHONY : robot_driver/CMakeFiles/dataProcess.dir/rule
+
+# Convenience name for target.
+dataProcess: robot_driver/CMakeFiles/dataProcess.dir/rule
+
+.PHONY : dataProcess
+
+# fast build rule for target.
+dataProcess/fast:
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/dataProcess.dir/build.make robot_driver/CMakeFiles/dataProcess.dir/build
+.PHONY : dataProcess/fast
+
 src/IamPub.o: src/IamPub.cpp.o
 
 .PHONY : src/IamPub.o
@@ -489,6 +504,33 @@ src/IamSub.cpp.s:
 	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamSub.dir/build.make robot_driver/CMakeFiles/IamSub.dir/src/IamSub.cpp.s
 .PHONY : src/IamSub.cpp.s
 
+src/laserProcessing.o: src/laserProcessing.cpp.o
+
+.PHONY : src/laserProcessing.o
+
+# target to build an object file
+src/laserProcessing.cpp.o:
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/dataProcess.dir/build.make robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.o
+.PHONY : src/laserProcessing.cpp.o
+
+src/laserProcessing.i: src/laserProcessing.cpp.i
+
+.PHONY : src/laserProcessing.i
+
+# target to preprocess a source file
+src/laserProcessing.cpp.i:
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/dataProcess.dir/build.make robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.i
+.PHONY : src/laserProcessing.cpp.i
+
+src/laserProcessing.s: src/laserProcessing.cpp.s
+
+.PHONY : src/laserProcessing.s
+
+# target to generate assembly for a file
+src/laserProcessing.cpp.s:
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/dataProcess.dir/build.make robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.s
+.PHONY : src/laserProcessing.cpp.s
+
 src/pioneerLaser.o: src/pioneerLaser.cpp.o
 
 .PHONY : src/pioneerLaser.o
@@ -525,10 +567,10 @@ help:
 	@echo "... list_install_components"
 	@echo "... install"
 	@echo "... rebuild_cache"
+	@echo "... edit_cache"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_eus"
-	@echo "... edit_cache"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
@@ -539,13 +581,14 @@ help:
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... IamPub"
 	@echo "... test"
-	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... pioneer_laser_node"
 	@echo "... install/local"
 	@echo "... IamSub"
+	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... dataProcess"
 	@echo "... install/strip"
 	@echo "... src/IamPub.o"
 	@echo "... src/IamPub.i"
@@ -553,6 +596,9 @@ help:
 	@echo "... src/IamSub.o"
 	@echo "... src/IamSub.i"
 	@echo "... src/IamSub.s"
+	@echo "... src/laserProcessing.o"
+	@echo "... src/laserProcessing.i"
+	@echo "... src/laserProcessing.s"
 	@echo "... src/pioneerLaser.o"
 	@echo "... src/pioneerLaser.i"
 	@echo "... src/pioneerLaser.s"
