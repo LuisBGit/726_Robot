@@ -27,7 +27,7 @@ define rectangle model
   color "random"
 )
 
-define circle model28
+define circle model
 (
   bitmap "circle.png"
   color "random"
@@ -55,9 +55,8 @@ define myRobot position
     myLaser(pose [ 0.280 0.000 -0.200 0.000 ])
 )
 
-
 # throw in a robot
-myRobot( pose [ 0.000 -2.33 0.000 90.000 ] origin [ 0.000 0.000 0.000 90.000 ] name "bob" color "random")
+myRobot( pose [ 0.000 -1.5 0.000 90.000 ] origin [ 0.000 0.000 0.000 90.000 ] name "bob" color "random")
 
 #Border
 
@@ -72,6 +71,6 @@ myRobot( pose [ 0.000 -2.33 0.000 90.000 ] origin [ 0.000 0.000 0.000 90.000 ] n
 #)
 
 rectangle(
-  pose [0 0 0 0]
-  size [1 1 0.500]
+  pose [-0.212 0 0 45]
+  size [0.3 0.3 0.500]
 )

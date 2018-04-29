@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/IamSub.dir/src/IamSub.cpp.o"
-  "/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/robot_driver/IamSub.pdb"
-  "/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/robot_driver/IamSub"
+  "/home/luis/Documents/726_Robot/devel/lib/robot_driver/IamSub.pdb"
+  "/home/luis/Documents/726_Robot/devel/lib/robot_driver/IamSub"
 )
 
 # Per-language clean rules from dependency scanning.

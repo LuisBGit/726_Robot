@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/robot_driver/src/IamSub.cpp
+/home/luis/Documents/726_Robot/src/robot_driver/src/IamSub.cpp
 ros/ros.h
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/robot_driver/src/ros/ros.h
+/home/luis/Documents/726_Robot/src/robot_driver/src/ros/ros.h
 std_msgs/String.h
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/robot_driver/src/std_msgs/String.h
+/home/luis/Documents/726_Robot/src/robot_driver/src/std_msgs/String.h
 
 /opt/ros/kinetic/include/ros/advertise_options.h
 ros/forwards.h

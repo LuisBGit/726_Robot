@@ -7,4 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PWD="/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build"
+export PWD="/home/luis/Documents/726_Robot/build"
