@@ -17,7 +17,7 @@ void laserScanCallback(const sensor_msgs::LaserScan::ConstPtr& laserScanData) {
 
 
  //Determine which is the closest point
-  for (int i = 0; i < rangeDataNum; i++) {
+  for (int i = 0; i < rangeDataNum; ++i) {
     if (laserScanData->ranges[i]< lowest) {
       lowest = laserScanData->ranges[i];
       lowestX = laserScanData->ranges[i] * sin((laserScanData->angle_increment * i)* PI / 180);
@@ -31,23 +31,24 @@ void laserScanCallback(const sensor_msgs::LaserScan::ConstPtr& laserScanData) {
   float startPoint = 0;
 
   //Find first point
-  for (int i = 1; i < rangeDataNum; i++) {
+  for (int i = 1; i < rangeDataNum; ++i) {
     float diff = (laserScanData->ranges[i]*  cos((laserScanData->angle_increment * i)* PI / 180)) - (laserScanData->ranges[i - 1]  * cos((laserScanData->angle_increment * (i - 1)* PI / 180)));
     if (diff > 0) {
       startPoint = i;
 
       break;
     }
+    //ROS_INFO(" Start Angle Differences: [%f]",diff);
   }
-  ROS_INFO("[%f]", startPoint);
   float endPoint = 0;
   //Seems to be working without walls
-  for (int i = rangeDataNum - 2; i >= 0 ; i--) {
+  for (int i = rangeDataNum - 2; i >= 0 ; --i) {
     float diff = (laserScanData->ranges[i]*  cos((laserScanData->angle_increment * i)* PI / 180)) - (laserScanData->ranges[i + 1]  * cos((laserScanData->angle_increment * (i + 1)* PI / 180)));
     if (diff < 0) {
       endPoint = i;
       break;
     }
+    //ROS_INFO(" End Angle Differences: [%f]",diff);
   }
 
 
