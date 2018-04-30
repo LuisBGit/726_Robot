@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luis/Documents/726_Robot/src
+CMAKE_SOURCE_DIR = /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luis/Documents/726_Robot/build
+CMAKE_BINARY_DIR = /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -66,17 +66,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -111,17 +100,6 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -133,16 +111,27 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /home/luis/Documents/726_Robot/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/luis/Documents/726_Robot/build/CMakeFiles /home/luis/Documents/726_Robot/build/openslam_gmapping/sensor/sensor_base/CMakeFiles/progress.marks
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 openslam_gmapping/sensor/sensor_base/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luis/Documents/726_Robot/build/CMakeFiles 0
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(CMAKE_COMMAND) -E cmake_progress_start /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/sensor/sensor_base/CMakeFiles/progress.marks
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 openslam_gmapping/sensor/sensor_base/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 openslam_gmapping/sensor/sensor_base/clean
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 openslam_gmapping/sensor/sensor_base/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 openslam_gmapping/sensor/sensor_base/preinstall
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 openslam_gmapping/sensor/sensor_base/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 openslam_gmapping/sensor/sensor_base/preinstall
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 openslam_gmapping/sensor/sensor_base/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/luis/Documents/726_Robot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/rule:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/rule
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/rule
 .PHONY : openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/rule
 
 # Convenience name for target.
@@ -177,7 +166,7 @@ sensor_base: openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/rul
 
 # fast build rule for target.
 sensor_base/fast:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/build.make openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/build
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/build.make openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/build
 .PHONY : sensor_base/fast
 
 sensor.o: sensor.cpp.o
@@ -186,7 +175,7 @@ sensor.o: sensor.cpp.o
 
 # target to build an object file
 sensor.cpp.o:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/build.make openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.o
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/build.make openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.o
 .PHONY : sensor.cpp.o
 
 sensor.i: sensor.cpp.i
@@ -195,7 +184,7 @@ sensor.i: sensor.cpp.i
 
 # target to preprocess a source file
 sensor.cpp.i:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/build.make openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.i
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/build.make openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.i
 .PHONY : sensor.cpp.i
 
 sensor.s: sensor.cpp.s
@@ -204,7 +193,7 @@ sensor.s: sensor.cpp.s
 
 # target to generate assembly for a file
 sensor.cpp.s:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/build.make openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.s
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/build.make openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.s
 .PHONY : sensor.cpp.s
 
 sensorreading.o: sensorreading.cpp.o
@@ -213,7 +202,7 @@ sensorreading.o: sensorreading.cpp.o
 
 # target to build an object file
 sensorreading.cpp.o:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/build.make openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensorreading.cpp.o
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/build.make openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensorreading.cpp.o
 .PHONY : sensorreading.cpp.o
 
 sensorreading.i: sensorreading.cpp.i
@@ -222,7 +211,7 @@ sensorreading.i: sensorreading.cpp.i
 
 # target to preprocess a source file
 sensorreading.cpp.i:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/build.make openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensorreading.cpp.i
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/build.make openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensorreading.cpp.i
 .PHONY : sensorreading.cpp.i
 
 sensorreading.s: sensorreading.cpp.s
@@ -231,7 +220,7 @@ sensorreading.s: sensorreading.cpp.s
 
 # target to generate assembly for a file
 sensorreading.cpp.s:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/build.make openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensorreading.cpp.s
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/build.make openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensorreading.cpp.s
 .PHONY : sensorreading.cpp.s
 
 # Help Target
@@ -241,13 +230,12 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... list_install_components"
 	@echo "... install"
 	@echo "... sensor_base"
 	@echo "... test"
-	@echo "... install/strip"
 	@echo "... install/local"
+	@echo "... edit_cache"
 	@echo "... sensor.o"
 	@echo "... sensor.i"
 	@echo "... sensor.s"
@@ -265,6 +253,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/luis/Documents/726_Robot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

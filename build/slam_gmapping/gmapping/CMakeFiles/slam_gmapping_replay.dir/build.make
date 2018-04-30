@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luis/Documents/726_Robot/src
+CMAKE_SOURCE_DIR = /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luis/Documents/726_Robot/build
+CMAKE_BINARY_DIR = /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build
 
 # Include any dependencies generated for this target.
 include slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/depend.make
@@ -58,17 +58,17 @@ include slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/progress.make
 include slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/flags.make
 
 slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/src/slam_gmapping.cpp.o: slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/flags.make
-slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/src/slam_gmapping.cpp.o: /home/luis/Documents/726_Robot/src/slam_gmapping/gmapping/src/slam_gmapping.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luis/Documents/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/src/slam_gmapping.cpp.o"
-	cd /home/luis/Documents/726_Robot/build/slam_gmapping/gmapping && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/slam_gmapping_replay.dir/src/slam_gmapping.cpp.o -c /home/luis/Documents/726_Robot/src/slam_gmapping/gmapping/src/slam_gmapping.cpp
+slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/src/slam_gmapping.cpp.o: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/slam_gmapping/gmapping/src/slam_gmapping.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/src/slam_gmapping.cpp.o"
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/slam_gmapping/gmapping && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/slam_gmapping_replay.dir/src/slam_gmapping.cpp.o -c /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/slam_gmapping/gmapping/src/slam_gmapping.cpp
 
 slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/src/slam_gmapping.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/slam_gmapping_replay.dir/src/slam_gmapping.cpp.i"
-	cd /home/luis/Documents/726_Robot/build/slam_gmapping/gmapping && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luis/Documents/726_Robot/src/slam_gmapping/gmapping/src/slam_gmapping.cpp > CMakeFiles/slam_gmapping_replay.dir/src/slam_gmapping.cpp.i
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/slam_gmapping/gmapping && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/slam_gmapping/gmapping/src/slam_gmapping.cpp > CMakeFiles/slam_gmapping_replay.dir/src/slam_gmapping.cpp.i
 
 slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/src/slam_gmapping.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/slam_gmapping_replay.dir/src/slam_gmapping.cpp.s"
-	cd /home/luis/Documents/726_Robot/build/slam_gmapping/gmapping && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luis/Documents/726_Robot/src/slam_gmapping/gmapping/src/slam_gmapping.cpp -o CMakeFiles/slam_gmapping_replay.dir/src/slam_gmapping.cpp.s
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/slam_gmapping/gmapping && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/slam_gmapping/gmapping/src/slam_gmapping.cpp -o CMakeFiles/slam_gmapping_replay.dir/src/slam_gmapping.cpp.s
 
 slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/src/slam_gmapping.cpp.o.requires:
 
@@ -82,17 +82,17 @@ slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/src/slam_gmapping.cpp
 
 
 slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/src/replay.cpp.o: slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/flags.make
-slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/src/replay.cpp.o: /home/luis/Documents/726_Robot/src/slam_gmapping/gmapping/src/replay.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luis/Documents/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/src/replay.cpp.o"
-	cd /home/luis/Documents/726_Robot/build/slam_gmapping/gmapping && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/slam_gmapping_replay.dir/src/replay.cpp.o -c /home/luis/Documents/726_Robot/src/slam_gmapping/gmapping/src/replay.cpp
+slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/src/replay.cpp.o: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/slam_gmapping/gmapping/src/replay.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/src/replay.cpp.o"
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/slam_gmapping/gmapping && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/slam_gmapping_replay.dir/src/replay.cpp.o -c /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/slam_gmapping/gmapping/src/replay.cpp
 
 slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/src/replay.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/slam_gmapping_replay.dir/src/replay.cpp.i"
-	cd /home/luis/Documents/726_Robot/build/slam_gmapping/gmapping && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luis/Documents/726_Robot/src/slam_gmapping/gmapping/src/replay.cpp > CMakeFiles/slam_gmapping_replay.dir/src/replay.cpp.i
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/slam_gmapping/gmapping && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/slam_gmapping/gmapping/src/replay.cpp > CMakeFiles/slam_gmapping_replay.dir/src/replay.cpp.i
 
 slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/src/replay.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/slam_gmapping_replay.dir/src/replay.cpp.s"
-	cd /home/luis/Documents/726_Robot/build/slam_gmapping/gmapping && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luis/Documents/726_Robot/src/slam_gmapping/gmapping/src/replay.cpp -o CMakeFiles/slam_gmapping_replay.dir/src/replay.cpp.s
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/slam_gmapping/gmapping && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/slam_gmapping/gmapping/src/replay.cpp -o CMakeFiles/slam_gmapping_replay.dir/src/replay.cpp.s
 
 slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/src/replay.cpp.o.requires:
 
@@ -113,101 +113,205 @@ slam_gmapping_replay_OBJECTS = \
 # External object files for target slam_gmapping_replay
 slam_gmapping_replay_EXTERNAL_OBJECTS =
 
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/src/slam_gmapping.cpp.o
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/src/replay.cpp.o
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/build.make
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libnodeletlib.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libbondcpp.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libuuid.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libclass_loader.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/libPocoFoundation.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libroslib.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/librospack.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libpython2.7.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libtinyxml.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /home/luis/Documents/726_Robot/devel/lib/libgridfastslam.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /home/luis/Documents/726_Robot/devel/lib/libscanmatcher.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /home/luis/Documents/726_Robot/devel/lib/libsensor_range.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /home/luis/Documents/726_Robot/devel/lib/libsensor_odometry.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /home/luis/Documents/726_Robot/devel/lib/libutils.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libtf.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libtf2_ros.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libactionlib.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libmessage_filters.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libroscpp.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libxmlrpcpp.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libtf2.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libroscpp_serialization.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/librosconsole.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/librostime.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libcpp_common.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/librosbag_storage.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libroslz4.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/liblz4.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libnodeletlib.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libbondcpp.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libuuid.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libclass_loader.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/libPocoFoundation.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libroslib.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/librospack.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libpython2.7.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libtinyxml.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libtf.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libtf2_ros.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libactionlib.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libmessage_filters.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libroscpp.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libxmlrpcpp.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libtf2.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libroscpp_serialization.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/librosconsole.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/librostime.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libcpp_common.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/librosbag_storage.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libroslz4.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/liblz4.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /home/luis/Documents/726_Robot/devel/lib/libsensor_base.so
-/home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay: slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luis/Documents/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay"
-	cd /home/luis/Documents/726_Robot/build/slam_gmapping/gmapping && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/slam_gmapping_replay.dir/link.txt --verbose=$(VERBOSE)
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/src/slam_gmapping.cpp.o
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/src/replay.cpp.o
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/build.make
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libnodeletlib.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libbondcpp.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libuuid.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libclass_loader.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/libPocoFoundation.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libdl.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libroslib.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/librospack.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libgridfastslam.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libscanmatcher.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libsensor_range.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libsensor_odometry.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libutils.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libtf.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libtf2_ros.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libactionlib.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libmessage_filters.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libroscpp.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libxmlrpcpp.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libtf2.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libroscpp_serialization.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/librosconsole.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/librostime.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libcpp_common.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libpthread.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/librosbag_storage.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libroslz4.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/liblz4.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libnodeletlib.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libbondcpp.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libuuid.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libclass_loader.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/libPocoFoundation.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libdl.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libroslib.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/librospack.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libtf.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libtf2_ros.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libactionlib.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libmessage_filters.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libroscpp.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libxmlrpcpp.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libtf2.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libroscpp_serialization.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/librosconsole.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/librostime.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libcpp_common.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libpthread.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/librosbag_storage.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /opt/ros/kinetic/lib/libroslz4.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/liblz4.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libsensor_base.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay: slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay"
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/slam_gmapping/gmapping && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/slam_gmapping_replay.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/build: /home/luis/Documents/726_Robot/devel/lib/gmapping/slam_gmapping_replay
+slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/build: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/gmapping/slam_gmapping_replay
 
 .PHONY : slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/build
+
+# Object files for target slam_gmapping_replay
+slam_gmapping_replay_OBJECTS = \
+"CMakeFiles/slam_gmapping_replay.dir/src/slam_gmapping.cpp.o" \
+"CMakeFiles/slam_gmapping_replay.dir/src/replay.cpp.o"
+
+# External object files for target slam_gmapping_replay
+slam_gmapping_replay_EXTERNAL_OBJECTS =
+
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/src/slam_gmapping.cpp.o
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/src/replay.cpp.o
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/build.make
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libnodeletlib.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libbondcpp.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libuuid.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libclass_loader.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/libPocoFoundation.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libdl.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libroslib.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/librospack.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libgridfastslam.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libscanmatcher.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libsensor_range.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libsensor_odometry.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libutils.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libtf.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libtf2_ros.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libactionlib.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libmessage_filters.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libroscpp.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libxmlrpcpp.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libtf2.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libroscpp_serialization.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/librosconsole.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/librostime.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libcpp_common.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libpthread.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/librosbag_storage.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_system.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libroslz4.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/liblz4.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libnodeletlib.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libbondcpp.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libuuid.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libclass_loader.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/libPocoFoundation.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libdl.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libroslib.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/librospack.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libtf.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libtf2_ros.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libactionlib.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libmessage_filters.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libroscpp.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libxmlrpcpp.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libtf2.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libroscpp_serialization.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/librosconsole.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/librostime.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libcpp_common.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libpthread.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/librosbag_storage.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/libboost_system.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /opt/ros/kinetic/lib/libroslz4.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /usr/lib/x86_64-linux-gnu/liblz4.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libsensor_base.so
+slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay: slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/relink.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable CMakeFiles/CMakeRelink.dir/slam_gmapping_replay"
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/slam_gmapping/gmapping && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/slam_gmapping_replay.dir/relink.txt --verbose=$(VERBOSE)
+
+# Rule to relink during preinstall.
+slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/preinstall: slam_gmapping/gmapping/CMakeFiles/CMakeRelink.dir/slam_gmapping_replay
+
+.PHONY : slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/preinstall
 
 slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/requires: slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/src/slam_gmapping.cpp.o.requires
 slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/requires: slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/src/replay.cpp.o.requires
@@ -215,10 +319,10 @@ slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/requires: slam_gmappi
 .PHONY : slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/requires
 
 slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/clean:
-	cd /home/luis/Documents/726_Robot/build/slam_gmapping/gmapping && $(CMAKE_COMMAND) -P CMakeFiles/slam_gmapping_replay.dir/cmake_clean.cmake
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/slam_gmapping/gmapping && $(CMAKE_COMMAND) -P CMakeFiles/slam_gmapping_replay.dir/cmake_clean.cmake
 .PHONY : slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/clean
 
 slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/depend:
-	cd /home/luis/Documents/726_Robot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luis/Documents/726_Robot/src /home/luis/Documents/726_Robot/src/slam_gmapping/gmapping /home/luis/Documents/726_Robot/build /home/luis/Documents/726_Robot/build/slam_gmapping/gmapping /home/luis/Documents/726_Robot/build/slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/DependInfo.cmake --color=$(COLOR)
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/slam_gmapping/gmapping /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/slam_gmapping/gmapping /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/depend
 

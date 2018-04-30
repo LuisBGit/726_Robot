@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luis/Documents/726_Robot/src
+CMAKE_SOURCE_DIR = /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luis/Documents/726_Robot/build
+CMAKE_BINARY_DIR = /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build
 
 # Utility rule file for roscpp_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ robot_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/build: roscpp_generate_
 .PHONY : robot_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 
 robot_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
-	cd /home/luis/Documents/726_Robot/build/robot_driver && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/robot_driver && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : robot_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 
 robot_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/depend:
-	cd /home/luis/Documents/726_Robot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luis/Documents/726_Robot/src /home/luis/Documents/726_Robot/src/robot_driver /home/luis/Documents/726_Robot/build /home/luis/Documents/726_Robot/build/robot_driver /home/luis/Documents/726_Robot/build/robot_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/robot_driver /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/robot_driver /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/robot_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : robot_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
 

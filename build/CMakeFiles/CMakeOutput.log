@@ -580,3 +580,59 @@ Linking C executable cmTC_30030
 make[1]: Leaving directory '/home/luis/Documents/726_Robot/build/CMakeFiles/CMakeTmp'
 
 
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f49b1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f49b1.dir/build.make CMakeFiles/cmTC_f49b1.dir/build
+make[1]: Entering directory '/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f49b1.dir/CheckIncludeFile.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_f49b1.dir/CheckIncludeFile.c.o   -c /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_f49b1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f49b1.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_f49b1.dir/CheckIncludeFile.c.o  -o cmTC_f49b1 -rdynamic 
+make[1]: Leaving directory '/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_63dc4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_63dc4.dir/build.make CMakeFiles/cmTC_63dc4.dir/build
+make[1]: Entering directory '/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_63dc4.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_63dc4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_63dc4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63dc4.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_63dc4.dir/CheckFunctionExists.c.o  -o cmTC_63dc4 -rdynamic -lpthread 
+make[1]: Leaving directory '/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2e3af/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2e3af.dir/build.make CMakeFiles/cmTC_2e3af.dir/build
+make[1]: Entering directory '/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2e3af.dir/CheckIncludeFile.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_2e3af.dir/CheckIncludeFile.c.o   -c /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_2e3af
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e3af.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_2e3af.dir/CheckIncludeFile.c.o  -o cmTC_2e3af -rdynamic 
+make[1]: Leaving directory '/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_744b3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_744b3.dir/build.make CMakeFiles/cmTC_744b3.dir/build
+make[1]: Entering directory '/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_744b3.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_744b3.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_744b3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_744b3.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_744b3.dir/CheckFunctionExists.c.o  -o cmTC_744b3 -rdynamic -lpthread 
+make[1]: Leaving directory '/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles/CMakeTmp'
+
+

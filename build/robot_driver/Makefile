@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luis/Documents/726_Robot/src
+CMAKE_SOURCE_DIR = /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luis/Documents/726_Robot/build
+CMAKE_BINARY_DIR = /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -122,27 +122,16 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
-	cd /home/luis/Documents/726_Robot/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/luis/Documents/726_Robot/build/CMakeFiles /home/luis/Documents/726_Robot/build/robot_driver/CMakeFiles/progress.marks
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luis/Documents/726_Robot/build/CMakeFiles 0
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(CMAKE_COMMAND) -E cmake_progress_start /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/robot_driver/CMakeFiles/progress.marks
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/clean
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/preinstall
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/preinstall
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/luis/Documents/726_Robot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 robot_driver/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 .PHONY : robot_driver/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -177,12 +166,12 @@ std_msgs_generate_messages_py: robot_driver/CMakeFiles/std_msgs_generate_message
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/std_msgs_generate_messages_py.dir/build.make robot_driver/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/std_msgs_generate_messages_py.dir/build.make robot_driver/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 robot_driver/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/roscpp_generate_messages_py.dir/rule
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/roscpp_generate_messages_py.dir/rule
 .PHONY : robot_driver/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -192,12 +181,12 @@ roscpp_generate_messages_py: robot_driver/CMakeFiles/roscpp_generate_messages_py
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/roscpp_generate_messages_py.dir/build.make robot_driver/CMakeFiles/roscpp_generate_messages_py.dir/build
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/roscpp_generate_messages_py.dir/build.make robot_driver/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 # Convenience name for target.
 robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 .PHONY : robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -207,12 +196,12 @@ rosgraph_msgs_generate_messages_eus: robot_driver/CMakeFiles/rosgraph_msgs_gener
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 .PHONY : robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -222,12 +211,12 @@ rosgraph_msgs_generate_messages_nodejs: robot_driver/CMakeFiles/rosgraph_msgs_ge
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 robot_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : robot_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -237,12 +226,12 @@ roscpp_generate_messages_cpp: robot_driver/CMakeFiles/roscpp_generate_messages_c
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make robot_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make robot_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 # Convenience name for target.
 robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -252,12 +241,12 @@ rosgraph_msgs_generate_messages_cpp: robot_driver/CMakeFiles/rosgraph_msgs_gener
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 robot_driver/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 .PHONY : robot_driver/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -267,12 +256,12 @@ std_msgs_generate_messages_cpp: robot_driver/CMakeFiles/std_msgs_generate_messag
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make robot_driver/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make robot_driver/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 robot_driver/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 .PHONY : robot_driver/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -282,12 +271,12 @@ roscpp_generate_messages_eus: robot_driver/CMakeFiles/roscpp_generate_messages_e
 
 # fast build rule for target.
 roscpp_generate_messages_eus/fast:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/roscpp_generate_messages_eus.dir/build.make robot_driver/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/roscpp_generate_messages_eus.dir/build.make robot_driver/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
 
 # Convenience name for target.
 robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 .PHONY : robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -297,12 +286,12 @@ rosgraph_msgs_generate_messages_py: robot_driver/CMakeFiles/rosgraph_msgs_genera
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 .PHONY : robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -312,12 +301,12 @@ rosgraph_msgs_generate_messages_lisp: robot_driver/CMakeFiles/rosgraph_msgs_gene
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make robot_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 robot_driver/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 .PHONY : robot_driver/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -327,12 +316,12 @@ roscpp_generate_messages_nodejs: robot_driver/CMakeFiles/roscpp_generate_message
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make robot_driver/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make robot_driver/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 # Convenience name for target.
 robot_driver/CMakeFiles/IamPub.dir/rule:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/IamPub.dir/rule
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/IamPub.dir/rule
 .PHONY : robot_driver/CMakeFiles/IamPub.dir/rule
 
 # Convenience name for target.
@@ -342,12 +331,12 @@ IamPub: robot_driver/CMakeFiles/IamPub.dir/rule
 
 # fast build rule for target.
 IamPub/fast:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamPub.dir/build.make robot_driver/CMakeFiles/IamPub.dir/build
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamPub.dir/build.make robot_driver/CMakeFiles/IamPub.dir/build
 .PHONY : IamPub/fast
 
 # Convenience name for target.
 robot_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : robot_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -357,12 +346,12 @@ roscpp_generate_messages_lisp: robot_driver/CMakeFiles/roscpp_generate_messages_
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make robot_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make robot_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 # Convenience name for target.
 robot_driver/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 .PHONY : robot_driver/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -372,12 +361,12 @@ std_msgs_generate_messages_eus: robot_driver/CMakeFiles/std_msgs_generate_messag
 
 # fast build rule for target.
 std_msgs_generate_messages_eus/fast:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make robot_driver/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make robot_driver/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 robot_driver/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 .PHONY : robot_driver/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -387,12 +376,12 @@ std_msgs_generate_messages_lisp: robot_driver/CMakeFiles/std_msgs_generate_messa
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make robot_driver/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make robot_driver/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 robot_driver/CMakeFiles/pioneer_laser_node.dir/rule:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/pioneer_laser_node.dir/rule
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/pioneer_laser_node.dir/rule
 .PHONY : robot_driver/CMakeFiles/pioneer_laser_node.dir/rule
 
 # Convenience name for target.
@@ -402,12 +391,12 @@ pioneer_laser_node: robot_driver/CMakeFiles/pioneer_laser_node.dir/rule
 
 # fast build rule for target.
 pioneer_laser_node/fast:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/pioneer_laser_node.dir/build.make robot_driver/CMakeFiles/pioneer_laser_node.dir/build
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/pioneer_laser_node.dir/build.make robot_driver/CMakeFiles/pioneer_laser_node.dir/build
 .PHONY : pioneer_laser_node/fast
 
 # Convenience name for target.
 robot_driver/CMakeFiles/IamSub.dir/rule:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/IamSub.dir/rule
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/IamSub.dir/rule
 .PHONY : robot_driver/CMakeFiles/IamSub.dir/rule
 
 # Convenience name for target.
@@ -417,12 +406,12 @@ IamSub: robot_driver/CMakeFiles/IamSub.dir/rule
 
 # fast build rule for target.
 IamSub/fast:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamSub.dir/build.make robot_driver/CMakeFiles/IamSub.dir/build
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamSub.dir/build.make robot_driver/CMakeFiles/IamSub.dir/build
 .PHONY : IamSub/fast
 
 # Convenience name for target.
 robot_driver/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 .PHONY : robot_driver/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -432,12 +421,12 @@ std_msgs_generate_messages_nodejs: robot_driver/CMakeFiles/std_msgs_generate_mes
 
 # fast build rule for target.
 std_msgs_generate_messages_nodejs/fast:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make robot_driver/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make robot_driver/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 robot_driver/CMakeFiles/dataProcess.dir/rule:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/dataProcess.dir/rule
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/dataProcess.dir/rule
 .PHONY : robot_driver/CMakeFiles/dataProcess.dir/rule
 
 # Convenience name for target.
@@ -447,7 +436,7 @@ dataProcess: robot_driver/CMakeFiles/dataProcess.dir/rule
 
 # fast build rule for target.
 dataProcess/fast:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/dataProcess.dir/build.make robot_driver/CMakeFiles/dataProcess.dir/build
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/dataProcess.dir/build.make robot_driver/CMakeFiles/dataProcess.dir/build
 .PHONY : dataProcess/fast
 
 src/IamPub.o: src/IamPub.cpp.o
@@ -456,7 +445,7 @@ src/IamPub.o: src/IamPub.cpp.o
 
 # target to build an object file
 src/IamPub.cpp.o:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamPub.dir/build.make robot_driver/CMakeFiles/IamPub.dir/src/IamPub.cpp.o
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamPub.dir/build.make robot_driver/CMakeFiles/IamPub.dir/src/IamPub.cpp.o
 .PHONY : src/IamPub.cpp.o
 
 src/IamPub.i: src/IamPub.cpp.i
@@ -465,7 +454,7 @@ src/IamPub.i: src/IamPub.cpp.i
 
 # target to preprocess a source file
 src/IamPub.cpp.i:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamPub.dir/build.make robot_driver/CMakeFiles/IamPub.dir/src/IamPub.cpp.i
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamPub.dir/build.make robot_driver/CMakeFiles/IamPub.dir/src/IamPub.cpp.i
 .PHONY : src/IamPub.cpp.i
 
 src/IamPub.s: src/IamPub.cpp.s
@@ -474,7 +463,7 @@ src/IamPub.s: src/IamPub.cpp.s
 
 # target to generate assembly for a file
 src/IamPub.cpp.s:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamPub.dir/build.make robot_driver/CMakeFiles/IamPub.dir/src/IamPub.cpp.s
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamPub.dir/build.make robot_driver/CMakeFiles/IamPub.dir/src/IamPub.cpp.s
 .PHONY : src/IamPub.cpp.s
 
 src/IamSub.o: src/IamSub.cpp.o
@@ -483,7 +472,7 @@ src/IamSub.o: src/IamSub.cpp.o
 
 # target to build an object file
 src/IamSub.cpp.o:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamSub.dir/build.make robot_driver/CMakeFiles/IamSub.dir/src/IamSub.cpp.o
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamSub.dir/build.make robot_driver/CMakeFiles/IamSub.dir/src/IamSub.cpp.o
 .PHONY : src/IamSub.cpp.o
 
 src/IamSub.i: src/IamSub.cpp.i
@@ -492,7 +481,7 @@ src/IamSub.i: src/IamSub.cpp.i
 
 # target to preprocess a source file
 src/IamSub.cpp.i:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamSub.dir/build.make robot_driver/CMakeFiles/IamSub.dir/src/IamSub.cpp.i
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamSub.dir/build.make robot_driver/CMakeFiles/IamSub.dir/src/IamSub.cpp.i
 .PHONY : src/IamSub.cpp.i
 
 src/IamSub.s: src/IamSub.cpp.s
@@ -501,7 +490,7 @@ src/IamSub.s: src/IamSub.cpp.s
 
 # target to generate assembly for a file
 src/IamSub.cpp.s:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamSub.dir/build.make robot_driver/CMakeFiles/IamSub.dir/src/IamSub.cpp.s
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamSub.dir/build.make robot_driver/CMakeFiles/IamSub.dir/src/IamSub.cpp.s
 .PHONY : src/IamSub.cpp.s
 
 src/laserProcessing.o: src/laserProcessing.cpp.o
@@ -510,7 +499,7 @@ src/laserProcessing.o: src/laserProcessing.cpp.o
 
 # target to build an object file
 src/laserProcessing.cpp.o:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/dataProcess.dir/build.make robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.o
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/dataProcess.dir/build.make robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.o
 .PHONY : src/laserProcessing.cpp.o
 
 src/laserProcessing.i: src/laserProcessing.cpp.i
@@ -519,7 +508,7 @@ src/laserProcessing.i: src/laserProcessing.cpp.i
 
 # target to preprocess a source file
 src/laserProcessing.cpp.i:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/dataProcess.dir/build.make robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.i
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/dataProcess.dir/build.make robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.i
 .PHONY : src/laserProcessing.cpp.i
 
 src/laserProcessing.s: src/laserProcessing.cpp.s
@@ -528,7 +517,7 @@ src/laserProcessing.s: src/laserProcessing.cpp.s
 
 # target to generate assembly for a file
 src/laserProcessing.cpp.s:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/dataProcess.dir/build.make robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.s
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/dataProcess.dir/build.make robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.s
 .PHONY : src/laserProcessing.cpp.s
 
 src/pioneerLaser.o: src/pioneerLaser.cpp.o
@@ -537,7 +526,7 @@ src/pioneerLaser.o: src/pioneerLaser.cpp.o
 
 # target to build an object file
 src/pioneerLaser.cpp.o:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/pioneer_laser_node.dir/build.make robot_driver/CMakeFiles/pioneer_laser_node.dir/src/pioneerLaser.cpp.o
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/pioneer_laser_node.dir/build.make robot_driver/CMakeFiles/pioneer_laser_node.dir/src/pioneerLaser.cpp.o
 .PHONY : src/pioneerLaser.cpp.o
 
 src/pioneerLaser.i: src/pioneerLaser.cpp.i
@@ -546,7 +535,7 @@ src/pioneerLaser.i: src/pioneerLaser.cpp.i
 
 # target to preprocess a source file
 src/pioneerLaser.cpp.i:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/pioneer_laser_node.dir/build.make robot_driver/CMakeFiles/pioneer_laser_node.dir/src/pioneerLaser.cpp.i
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/pioneer_laser_node.dir/build.make robot_driver/CMakeFiles/pioneer_laser_node.dir/src/pioneerLaser.cpp.i
 .PHONY : src/pioneerLaser.cpp.i
 
 src/pioneerLaser.s: src/pioneerLaser.cpp.s
@@ -555,7 +544,7 @@ src/pioneerLaser.s: src/pioneerLaser.cpp.s
 
 # target to generate assembly for a file
 src/pioneerLaser.cpp.s:
-	cd /home/luis/Documents/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/pioneer_laser_node.dir/build.make robot_driver/CMakeFiles/pioneer_laser_node.dir/src/pioneerLaser.cpp.s
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/pioneer_laser_node.dir/build.make robot_driver/CMakeFiles/pioneer_laser_node.dir/src/pioneerLaser.cpp.s
 .PHONY : src/pioneerLaser.cpp.s
 
 # Help Target
@@ -567,10 +556,10 @@ help:
 	@echo "... list_install_components"
 	@echo "... install"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... edit_cache"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
@@ -589,7 +578,6 @@ help:
 	@echo "... IamSub"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... dataProcess"
-	@echo "... install/strip"
 	@echo "... src/IamPub.o"
 	@echo "... src/IamPub.i"
 	@echo "... src/IamPub.s"
@@ -613,6 +601,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/luis/Documents/726_Robot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

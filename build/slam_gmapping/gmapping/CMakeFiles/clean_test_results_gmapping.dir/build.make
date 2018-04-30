@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luis/Documents/726_Robot/src
+CMAKE_SOURCE_DIR = /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luis/Documents/726_Robot/build
+CMAKE_BINARY_DIR = /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build
 
 # Utility rule file for clean_test_results_gmapping.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/luis/Documents/726_Robot/build
 include slam_gmapping/gmapping/CMakeFiles/clean_test_results_gmapping.dir/progress.make
 
 slam_gmapping/gmapping/CMakeFiles/clean_test_results_gmapping:
-	cd /home/luis/Documents/726_Robot/build/slam_gmapping/gmapping && /home/luis/anaconda3/bin/python /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/luis/Documents/726_Robot/build/test_results/gmapping
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/slam_gmapping/gmapping && /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/test_results/gmapping
 
 clean_test_results_gmapping: slam_gmapping/gmapping/CMakeFiles/clean_test_results_gmapping
 clean_test_results_gmapping: slam_gmapping/gmapping/CMakeFiles/clean_test_results_gmapping.dir/build.make
@@ -67,10 +67,10 @@ slam_gmapping/gmapping/CMakeFiles/clean_test_results_gmapping.dir/build: clean_t
 .PHONY : slam_gmapping/gmapping/CMakeFiles/clean_test_results_gmapping.dir/build
 
 slam_gmapping/gmapping/CMakeFiles/clean_test_results_gmapping.dir/clean:
-	cd /home/luis/Documents/726_Robot/build/slam_gmapping/gmapping && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_gmapping.dir/cmake_clean.cmake
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/slam_gmapping/gmapping && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_gmapping.dir/cmake_clean.cmake
 .PHONY : slam_gmapping/gmapping/CMakeFiles/clean_test_results_gmapping.dir/clean
 
 slam_gmapping/gmapping/CMakeFiles/clean_test_results_gmapping.dir/depend:
-	cd /home/luis/Documents/726_Robot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luis/Documents/726_Robot/src /home/luis/Documents/726_Robot/src/slam_gmapping/gmapping /home/luis/Documents/726_Robot/build /home/luis/Documents/726_Robot/build/slam_gmapping/gmapping /home/luis/Documents/726_Robot/build/slam_gmapping/gmapping/CMakeFiles/clean_test_results_gmapping.dir/DependInfo.cmake --color=$(COLOR)
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/slam_gmapping/gmapping /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/slam_gmapping/gmapping /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/slam_gmapping/gmapping/CMakeFiles/clean_test_results_gmapping.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : slam_gmapping/gmapping/CMakeFiles/clean_test_results_gmapping.dir/depend
 

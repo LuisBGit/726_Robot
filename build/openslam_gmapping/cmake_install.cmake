@@ -1,8 +1,8 @@
-# Install script for directory: /home/luis/Documents/726_Robot/src/openslam_gmapping
+# Install script for directory: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/luis/Documents/726_Robot/install")
+  set(CMAKE_INSTALL_PREFIX "/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,30 +33,30 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/luis/Documents/726_Robot/build/openslam_gmapping/catkin_generated/installspace/openslam_gmapping.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/catkin_generated/installspace/openslam_gmapping.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/openslam_gmapping/cmake" TYPE FILE FILES
-    "/home/luis/Documents/726_Robot/build/openslam_gmapping/catkin_generated/installspace/openslam_gmappingConfig.cmake"
-    "/home/luis/Documents/726_Robot/build/openslam_gmapping/catkin_generated/installspace/openslam_gmappingConfig-version.cmake"
+    "/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/catkin_generated/installspace/openslam_gmappingConfig.cmake"
+    "/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/catkin_generated/installspace/openslam_gmappingConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/openslam_gmapping" TYPE FILE FILES "/home/luis/Documents/726_Robot/src/openslam_gmapping/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/openslam_gmapping" TYPE FILE FILES "/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/luis/Documents/726_Robot/src/openslam_gmapping/include/" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/[^/]*\\.hxx$" REGEX "/\\.svn$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/include/" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/[^/]*\\.hxx$" REGEX "/\\.svn$" EXCLUDE)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/luis/Documents/726_Robot/build/openslam_gmapping/gridfastslam/cmake_install.cmake")
-  include("/home/luis/Documents/726_Robot/build/openslam_gmapping/scanmatcher/cmake_install.cmake")
-  include("/home/luis/Documents/726_Robot/build/openslam_gmapping/sensor/cmake_install.cmake")
-  include("/home/luis/Documents/726_Robot/build/openslam_gmapping/utils/cmake_install.cmake")
+  include("/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/gridfastslam/cmake_install.cmake")
+  include("/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/scanmatcher/cmake_install.cmake")
+  include("/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/sensor/cmake_install.cmake")
+  include("/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/utils/cmake_install.cmake")
 
 endif()
 

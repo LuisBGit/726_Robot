@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/slam_gmapping_nodelet.dir/src/slam_gmapping.cpp.o"
   "CMakeFiles/slam_gmapping_nodelet.dir/src/nodelet.cpp.o"
-  "/home/luis/Documents/726_Robot/devel/lib/libslam_gmapping_nodelet.pdb"
-  "/home/luis/Documents/726_Robot/devel/lib/libslam_gmapping_nodelet.so"
+  "/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libslam_gmapping_nodelet.pdb"
+  "/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libslam_gmapping_nodelet.so"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -5,9 +5,9 @@ window
 (
   size [ 400 400 ]
   # camera options
-  center [ 0 0 ]
-  rotate [ 0 0 ]
-  scale 60
+  center [ 0.000 0.000 ]
+  rotate [ 0.000 0.000 ]
+  scale 60.000
 
 )
 
@@ -56,14 +56,14 @@ define myRobot position
 )
 
 # throw in a robot
-myRobot( pose [ 0.000 -1.5 0.000 90.000 ] origin [ 0.000 0.000 0.000 90.000 ] name "bob" color "random")
+myRobot( pose [ 0.000 -1.500 0.000 90.000 ] origin [ 0.000 0.000 0.000 90.000 ] name "bob" color "random")
 
 #Border
 
-#border(pose [ 0.000 -2.500 0.000 90.000 ] size [0.100 5.000 0.500])
-#border(pose [ 0.000 2.500 0.000 90.000 ] size [0.100 5.000 0.500])
-#border( pose [ 2.500 0.000 0.000 0.000 ] size [0.100 5.000 0.500])
-#border( pose [ -2.500 0.000 0.000 0.000 ] size [0.100 5.000 0.500])
+border(pose [ 0.000 -2.500 0.000 90.000 ] size [0.100 5.000 0.500])
+border(pose [ 0.000 2.500 0.000 90.000 ] size [0.100 5.000 0.500])
+border( pose [ 2.500 0.000 0.000 0.000 ] size [0.100 5.000 0.500])
+border( pose [ -2.500 0.000 0.000 0.000 ] size [0.100 5.000 0.500])
 
 #circle(
 #  pose [0 0 0 0]
@@ -71,6 +71,6 @@ myRobot( pose [ 0.000 -1.5 0.000 90.000 ] origin [ 0.000 0.000 0.000 90.000 ] na
 #)
 
 rectangle(
-  pose [-0.212 0 0 45]
-  size [0.3 0.3 0.500]
+  pose [0.000 0.000 0.000 45.000]
+  size [0.300 0.300 0.500]
 )

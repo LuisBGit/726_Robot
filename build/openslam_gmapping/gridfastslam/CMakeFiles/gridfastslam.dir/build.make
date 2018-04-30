@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luis/Documents/726_Robot/src
+CMAKE_SOURCE_DIR = /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luis/Documents/726_Robot/build
+CMAKE_BINARY_DIR = /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build
 
 # Include any dependencies generated for this target.
 include openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/depend.make
@@ -58,17 +58,17 @@ include openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/progress.make
 include openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/flags.make
 
 openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gfsreader.cpp.o: openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/flags.make
-openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gfsreader.cpp.o: /home/luis/Documents/726_Robot/src/openslam_gmapping/gridfastslam/gfsreader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luis/Documents/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gfsreader.cpp.o"
-	cd /home/luis/Documents/726_Robot/build/openslam_gmapping/gridfastslam && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gridfastslam.dir/gfsreader.cpp.o -c /home/luis/Documents/726_Robot/src/openslam_gmapping/gridfastslam/gfsreader.cpp
+openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gfsreader.cpp.o: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/gridfastslam/gfsreader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gfsreader.cpp.o"
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/gridfastslam && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gridfastslam.dir/gfsreader.cpp.o -c /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/gridfastslam/gfsreader.cpp
 
 openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gfsreader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gridfastslam.dir/gfsreader.cpp.i"
-	cd /home/luis/Documents/726_Robot/build/openslam_gmapping/gridfastslam && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luis/Documents/726_Robot/src/openslam_gmapping/gridfastslam/gfsreader.cpp > CMakeFiles/gridfastslam.dir/gfsreader.cpp.i
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/gridfastslam && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/gridfastslam/gfsreader.cpp > CMakeFiles/gridfastslam.dir/gfsreader.cpp.i
 
 openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gfsreader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gridfastslam.dir/gfsreader.cpp.s"
-	cd /home/luis/Documents/726_Robot/build/openslam_gmapping/gridfastslam && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luis/Documents/726_Robot/src/openslam_gmapping/gridfastslam/gfsreader.cpp -o CMakeFiles/gridfastslam.dir/gfsreader.cpp.s
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/gridfastslam && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/gridfastslam/gfsreader.cpp -o CMakeFiles/gridfastslam.dir/gfsreader.cpp.s
 
 openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gfsreader.cpp.o.requires:
 
@@ -82,17 +82,17 @@ openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gfsreader.cpp.o.provi
 
 
 openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.o: openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/flags.make
-openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.o: /home/luis/Documents/726_Robot/src/openslam_gmapping/gridfastslam/gridslamprocessor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luis/Documents/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.o"
-	cd /home/luis/Documents/726_Robot/build/openslam_gmapping/gridfastslam && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.o -c /home/luis/Documents/726_Robot/src/openslam_gmapping/gridfastslam/gridslamprocessor.cpp
+openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.o: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/gridfastslam/gridslamprocessor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.o"
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/gridfastslam && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.o -c /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/gridfastslam/gridslamprocessor.cpp
 
 openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.i"
-	cd /home/luis/Documents/726_Robot/build/openslam_gmapping/gridfastslam && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luis/Documents/726_Robot/src/openslam_gmapping/gridfastslam/gridslamprocessor.cpp > CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.i
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/gridfastslam && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/gridfastslam/gridslamprocessor.cpp > CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.i
 
 openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.s"
-	cd /home/luis/Documents/726_Robot/build/openslam_gmapping/gridfastslam && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luis/Documents/726_Robot/src/openslam_gmapping/gridfastslam/gridslamprocessor.cpp -o CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.s
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/gridfastslam && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/gridfastslam/gridslamprocessor.cpp -o CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.s
 
 openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.o.requires:
 
@@ -106,17 +106,17 @@ openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp
 
 
 openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.o: openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/flags.make
-openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.o: /home/luis/Documents/726_Robot/src/openslam_gmapping/gridfastslam/gridslamprocessor_tree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luis/Documents/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.o"
-	cd /home/luis/Documents/726_Robot/build/openslam_gmapping/gridfastslam && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.o -c /home/luis/Documents/726_Robot/src/openslam_gmapping/gridfastslam/gridslamprocessor_tree.cpp
+openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.o: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/gridfastslam/gridslamprocessor_tree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.o"
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/gridfastslam && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.o -c /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/gridfastslam/gridslamprocessor_tree.cpp
 
 openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.i"
-	cd /home/luis/Documents/726_Robot/build/openslam_gmapping/gridfastslam && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luis/Documents/726_Robot/src/openslam_gmapping/gridfastslam/gridslamprocessor_tree.cpp > CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.i
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/gridfastslam && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/gridfastslam/gridslamprocessor_tree.cpp > CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.i
 
 openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.s"
-	cd /home/luis/Documents/726_Robot/build/openslam_gmapping/gridfastslam && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luis/Documents/726_Robot/src/openslam_gmapping/gridfastslam/gridslamprocessor_tree.cpp -o CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.s
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/gridfastslam && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/gridfastslam/gridslamprocessor_tree.cpp -o CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.s
 
 openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.o.requires:
 
@@ -130,17 +130,17 @@ openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor_tre
 
 
 openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/motionmodel.cpp.o: openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/flags.make
-openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/motionmodel.cpp.o: /home/luis/Documents/726_Robot/src/openslam_gmapping/gridfastslam/motionmodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luis/Documents/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/motionmodel.cpp.o"
-	cd /home/luis/Documents/726_Robot/build/openslam_gmapping/gridfastslam && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gridfastslam.dir/motionmodel.cpp.o -c /home/luis/Documents/726_Robot/src/openslam_gmapping/gridfastslam/motionmodel.cpp
+openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/motionmodel.cpp.o: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/gridfastslam/motionmodel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/motionmodel.cpp.o"
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/gridfastslam && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gridfastslam.dir/motionmodel.cpp.o -c /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/gridfastslam/motionmodel.cpp
 
 openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/motionmodel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gridfastslam.dir/motionmodel.cpp.i"
-	cd /home/luis/Documents/726_Robot/build/openslam_gmapping/gridfastslam && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luis/Documents/726_Robot/src/openslam_gmapping/gridfastslam/motionmodel.cpp > CMakeFiles/gridfastslam.dir/motionmodel.cpp.i
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/gridfastslam && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/gridfastslam/motionmodel.cpp > CMakeFiles/gridfastslam.dir/motionmodel.cpp.i
 
 openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/motionmodel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gridfastslam.dir/motionmodel.cpp.s"
-	cd /home/luis/Documents/726_Robot/build/openslam_gmapping/gridfastslam && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luis/Documents/726_Robot/src/openslam_gmapping/gridfastslam/motionmodel.cpp -o CMakeFiles/gridfastslam.dir/motionmodel.cpp.s
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/gridfastslam && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/gridfastslam/motionmodel.cpp -o CMakeFiles/gridfastslam.dir/motionmodel.cpp.s
 
 openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/motionmodel.cpp.o.requires:
 
@@ -163,23 +163,51 @@ gridfastslam_OBJECTS = \
 # External object files for target gridfastslam
 gridfastslam_EXTERNAL_OBJECTS =
 
-/home/luis/Documents/726_Robot/devel/lib/libgridfastslam.so: openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gfsreader.cpp.o
-/home/luis/Documents/726_Robot/devel/lib/libgridfastslam.so: openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.o
-/home/luis/Documents/726_Robot/devel/lib/libgridfastslam.so: openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.o
-/home/luis/Documents/726_Robot/devel/lib/libgridfastslam.so: openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/motionmodel.cpp.o
-/home/luis/Documents/726_Robot/devel/lib/libgridfastslam.so: openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/build.make
-/home/luis/Documents/726_Robot/devel/lib/libgridfastslam.so: /home/luis/Documents/726_Robot/devel/lib/libscanmatcher.so
-/home/luis/Documents/726_Robot/devel/lib/libgridfastslam.so: /home/luis/Documents/726_Robot/devel/lib/libsensor_range.so
-/home/luis/Documents/726_Robot/devel/lib/libgridfastslam.so: /home/luis/Documents/726_Robot/devel/lib/libsensor_base.so
-/home/luis/Documents/726_Robot/devel/lib/libgridfastslam.so: /home/luis/Documents/726_Robot/devel/lib/libutils.so
-/home/luis/Documents/726_Robot/devel/lib/libgridfastslam.so: openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luis/Documents/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library /home/luis/Documents/726_Robot/devel/lib/libgridfastslam.so"
-	cd /home/luis/Documents/726_Robot/build/openslam_gmapping/gridfastslam && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gridfastslam.dir/link.txt --verbose=$(VERBOSE)
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libgridfastslam.so: openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gfsreader.cpp.o
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libgridfastslam.so: openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.o
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libgridfastslam.so: openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.o
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libgridfastslam.so: openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/motionmodel.cpp.o
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libgridfastslam.so: openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/build.make
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libgridfastslam.so: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libscanmatcher.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libgridfastslam.so: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libsensor_range.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libgridfastslam.so: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libsensor_base.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libgridfastslam.so: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libutils.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libgridfastslam.so: openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libgridfastslam.so"
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/gridfastslam && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gridfastslam.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/build: /home/luis/Documents/726_Robot/devel/lib/libgridfastslam.so
+openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/build: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libgridfastslam.so
 
 .PHONY : openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/build
+
+# Object files for target gridfastslam
+gridfastslam_OBJECTS = \
+"CMakeFiles/gridfastslam.dir/gfsreader.cpp.o" \
+"CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.o" \
+"CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.o" \
+"CMakeFiles/gridfastslam.dir/motionmodel.cpp.o"
+
+# External object files for target gridfastslam
+gridfastslam_EXTERNAL_OBJECTS =
+
+openslam_gmapping/gridfastslam/CMakeFiles/CMakeRelink.dir/libgridfastslam.so: openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gfsreader.cpp.o
+openslam_gmapping/gridfastslam/CMakeFiles/CMakeRelink.dir/libgridfastslam.so: openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.o
+openslam_gmapping/gridfastslam/CMakeFiles/CMakeRelink.dir/libgridfastslam.so: openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.o
+openslam_gmapping/gridfastslam/CMakeFiles/CMakeRelink.dir/libgridfastslam.so: openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/motionmodel.cpp.o
+openslam_gmapping/gridfastslam/CMakeFiles/CMakeRelink.dir/libgridfastslam.so: openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/build.make
+openslam_gmapping/gridfastslam/CMakeFiles/CMakeRelink.dir/libgridfastslam.so: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libscanmatcher.so
+openslam_gmapping/gridfastslam/CMakeFiles/CMakeRelink.dir/libgridfastslam.so: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libsensor_range.so
+openslam_gmapping/gridfastslam/CMakeFiles/CMakeRelink.dir/libgridfastslam.so: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libsensor_base.so
+openslam_gmapping/gridfastslam/CMakeFiles/CMakeRelink.dir/libgridfastslam.so: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libutils.so
+openslam_gmapping/gridfastslam/CMakeFiles/CMakeRelink.dir/libgridfastslam.so: openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/relink.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library CMakeFiles/CMakeRelink.dir/libgridfastslam.so"
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/gridfastslam && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gridfastslam.dir/relink.txt --verbose=$(VERBOSE)
+
+# Rule to relink during preinstall.
+openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/preinstall: openslam_gmapping/gridfastslam/CMakeFiles/CMakeRelink.dir/libgridfastslam.so
+
+.PHONY : openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/preinstall
 
 openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/requires: openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gfsreader.cpp.o.requires
 openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/requires: openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.o.requires
@@ -189,10 +217,10 @@ openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/requires: openslam_gm
 .PHONY : openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/requires
 
 openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/clean:
-	cd /home/luis/Documents/726_Robot/build/openslam_gmapping/gridfastslam && $(CMAKE_COMMAND) -P CMakeFiles/gridfastslam.dir/cmake_clean.cmake
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/gridfastslam && $(CMAKE_COMMAND) -P CMakeFiles/gridfastslam.dir/cmake_clean.cmake
 .PHONY : openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/clean
 
 openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/depend:
-	cd /home/luis/Documents/726_Robot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luis/Documents/726_Robot/src /home/luis/Documents/726_Robot/src/openslam_gmapping/gridfastslam /home/luis/Documents/726_Robot/build /home/luis/Documents/726_Robot/build/openslam_gmapping/gridfastslam /home/luis/Documents/726_Robot/build/openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/DependInfo.cmake --color=$(COLOR)
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/gridfastslam /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/gridfastslam /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/depend
 

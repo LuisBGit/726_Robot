@@ -1,8 +1,8 @@
-# Install script for directory: /home/luis/Documents/726_Robot/src/openslam_gmapping/sensor
+# Install script for directory: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/sensor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/luis/Documents/726_Robot/install")
+  set(CMAKE_INSTALL_PREFIX "/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,9 +34,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/luis/Documents/726_Robot/build/openslam_gmapping/sensor/sensor_base/cmake_install.cmake")
-  include("/home/luis/Documents/726_Robot/build/openslam_gmapping/sensor/sensor_odometry/cmake_install.cmake")
-  include("/home/luis/Documents/726_Robot/build/openslam_gmapping/sensor/sensor_range/cmake_install.cmake")
+  include("/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/sensor/sensor_base/cmake_install.cmake")
+  include("/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/sensor/sensor_odometry/cmake_install.cmake")
+  include("/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/sensor/sensor_range/cmake_install.cmake")
 
 endif()
 

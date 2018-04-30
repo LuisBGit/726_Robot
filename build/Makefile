@@ -48,25 +48,23 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luis/Documents/726_Robot/src
+CMAKE_SOURCE_DIR = /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luis/Documents/726_Robot/build
+CMAKE_BINARY_DIR = /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
 
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -90,27 +88,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -133,11 +110,23 @@ test/fast: test
 
 .PHONY : test/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luis/Documents/726_Robot/build/CMakeFiles /home/luis/Documents/726_Robot/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luis/Documents/726_Robot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -308,6 +297,11 @@ gridfastslam/fast:
 	$(MAKE) -f openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/build.make openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/build
 .PHONY : gridfastslam/fast
 
+# Manual pre-install relink rule for target.
+gridfastslam/preinstall:
+	$(MAKE) -f openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/build.make openslam_gmapping/gridfastslam/CMakeFiles/gridfastslam.dir/preinstall
+.PHONY : gridfastslam/preinstall
+
 #=============================================================================
 # Target rules for targets named scanmatcher
 
@@ -320,6 +314,11 @@ scanmatcher: cmake_check_build_system
 scanmatcher/fast:
 	$(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build
 .PHONY : scanmatcher/fast
+
+# Manual pre-install relink rule for target.
+scanmatcher/preinstall:
+	$(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/preinstall
+.PHONY : scanmatcher/preinstall
 
 #=============================================================================
 # Target rules for targets named sensor_base
@@ -347,6 +346,11 @@ sensor_odometry/fast:
 	$(MAKE) -f openslam_gmapping/sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/build.make openslam_gmapping/sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/build
 .PHONY : sensor_odometry/fast
 
+# Manual pre-install relink rule for target.
+sensor_odometry/preinstall:
+	$(MAKE) -f openslam_gmapping/sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/build.make openslam_gmapping/sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/preinstall
+.PHONY : sensor_odometry/preinstall
+
 #=============================================================================
 # Target rules for targets named sensor_range
 
@@ -359,6 +363,11 @@ sensor_range: cmake_check_build_system
 sensor_range/fast:
 	$(MAKE) -f openslam_gmapping/sensor/sensor_range/CMakeFiles/sensor_range.dir/build.make openslam_gmapping/sensor/sensor_range/CMakeFiles/sensor_range.dir/build
 .PHONY : sensor_range/fast
+
+# Manual pre-install relink rule for target.
+sensor_range/preinstall:
+	$(MAKE) -f openslam_gmapping/sensor/sensor_range/CMakeFiles/sensor_range.dir/build.make openslam_gmapping/sensor/sensor_range/CMakeFiles/sensor_range.dir/preinstall
+.PHONY : sensor_range/preinstall
 
 #=============================================================================
 # Target rules for targets named utils
@@ -1062,6 +1071,11 @@ slam_gmapping/fast:
 	$(MAKE) -f slam_gmapping/gmapping/CMakeFiles/slam_gmapping.dir/build.make slam_gmapping/gmapping/CMakeFiles/slam_gmapping.dir/build
 .PHONY : slam_gmapping/fast
 
+# Manual pre-install relink rule for target.
+slam_gmapping/preinstall:
+	$(MAKE) -f slam_gmapping/gmapping/CMakeFiles/slam_gmapping.dir/build.make slam_gmapping/gmapping/CMakeFiles/slam_gmapping.dir/preinstall
+.PHONY : slam_gmapping/preinstall
+
 #=============================================================================
 # Target rules for targets named sensor_msgs_generate_messages_nodejs
 
@@ -1139,6 +1153,11 @@ slam_gmapping_replay: cmake_check_build_system
 slam_gmapping_replay/fast:
 	$(MAKE) -f slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/build.make slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/build
 .PHONY : slam_gmapping_replay/fast
+
+# Manual pre-install relink rule for target.
+slam_gmapping_replay/preinstall:
+	$(MAKE) -f slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/build.make slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/preinstall
+.PHONY : slam_gmapping_replay/preinstall
 
 #=============================================================================
 # Target rules for targets named bond_generate_messages_lisp
@@ -1562,7 +1581,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... clean_test_results"
 	@echo "... run_tests"
 	@echo "... download_extra_data"
@@ -1570,10 +1589,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... doxygen"
 	@echo "... rebuild_cache"
-	@echo "... list_install_components"
-	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... test"
+	@echo "... install"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"

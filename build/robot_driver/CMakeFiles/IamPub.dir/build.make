@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luis/Documents/726_Robot/src
+CMAKE_SOURCE_DIR = /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luis/Documents/726_Robot/build
+CMAKE_BINARY_DIR = /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build
 
 # Include any dependencies generated for this target.
 include robot_driver/CMakeFiles/IamPub.dir/depend.make
@@ -58,17 +58,17 @@ include robot_driver/CMakeFiles/IamPub.dir/progress.make
 include robot_driver/CMakeFiles/IamPub.dir/flags.make
 
 robot_driver/CMakeFiles/IamPub.dir/src/IamPub.cpp.o: robot_driver/CMakeFiles/IamPub.dir/flags.make
-robot_driver/CMakeFiles/IamPub.dir/src/IamPub.cpp.o: /home/luis/Documents/726_Robot/src/robot_driver/src/IamPub.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luis/Documents/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object robot_driver/CMakeFiles/IamPub.dir/src/IamPub.cpp.o"
-	cd /home/luis/Documents/726_Robot/build/robot_driver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IamPub.dir/src/IamPub.cpp.o -c /home/luis/Documents/726_Robot/src/robot_driver/src/IamPub.cpp
+robot_driver/CMakeFiles/IamPub.dir/src/IamPub.cpp.o: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/robot_driver/src/IamPub.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object robot_driver/CMakeFiles/IamPub.dir/src/IamPub.cpp.o"
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/robot_driver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IamPub.dir/src/IamPub.cpp.o -c /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/robot_driver/src/IamPub.cpp
 
 robot_driver/CMakeFiles/IamPub.dir/src/IamPub.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IamPub.dir/src/IamPub.cpp.i"
-	cd /home/luis/Documents/726_Robot/build/robot_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luis/Documents/726_Robot/src/robot_driver/src/IamPub.cpp > CMakeFiles/IamPub.dir/src/IamPub.cpp.i
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/robot_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/robot_driver/src/IamPub.cpp > CMakeFiles/IamPub.dir/src/IamPub.cpp.i
 
 robot_driver/CMakeFiles/IamPub.dir/src/IamPub.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IamPub.dir/src/IamPub.cpp.s"
-	cd /home/luis/Documents/726_Robot/build/robot_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luis/Documents/726_Robot/src/robot_driver/src/IamPub.cpp -o CMakeFiles/IamPub.dir/src/IamPub.cpp.s
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/robot_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/robot_driver/src/IamPub.cpp -o CMakeFiles/IamPub.dir/src/IamPub.cpp.s
 
 robot_driver/CMakeFiles/IamPub.dir/src/IamPub.cpp.o.requires:
 
@@ -88,33 +88,33 @@ IamPub_OBJECTS = \
 # External object files for target IamPub
 IamPub_EXTERNAL_OBJECTS =
 
-/home/luis/Documents/726_Robot/devel/lib/robot_driver/IamPub: robot_driver/CMakeFiles/IamPub.dir/src/IamPub.cpp.o
-/home/luis/Documents/726_Robot/devel/lib/robot_driver/IamPub: robot_driver/CMakeFiles/IamPub.dir/build.make
-/home/luis/Documents/726_Robot/devel/lib/robot_driver/IamPub: /opt/ros/kinetic/lib/libroscpp.so
-/home/luis/Documents/726_Robot/devel/lib/robot_driver/IamPub: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/luis/Documents/726_Robot/devel/lib/robot_driver/IamPub: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/luis/Documents/726_Robot/devel/lib/robot_driver/IamPub: /opt/ros/kinetic/lib/librosconsole.so
-/home/luis/Documents/726_Robot/devel/lib/robot_driver/IamPub: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
-/home/luis/Documents/726_Robot/devel/lib/robot_driver/IamPub: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
-/home/luis/Documents/726_Robot/devel/lib/robot_driver/IamPub: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/luis/Documents/726_Robot/devel/lib/robot_driver/IamPub: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/luis/Documents/726_Robot/devel/lib/robot_driver/IamPub: /opt/ros/kinetic/lib/libxmlrpcpp.so
-/home/luis/Documents/726_Robot/devel/lib/robot_driver/IamPub: /opt/ros/kinetic/lib/libroscpp_serialization.so
-/home/luis/Documents/726_Robot/devel/lib/robot_driver/IamPub: /opt/ros/kinetic/lib/librostime.so
-/home/luis/Documents/726_Robot/devel/lib/robot_driver/IamPub: /opt/ros/kinetic/lib/libcpp_common.so
-/home/luis/Documents/726_Robot/devel/lib/robot_driver/IamPub: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/luis/Documents/726_Robot/devel/lib/robot_driver/IamPub: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/luis/Documents/726_Robot/devel/lib/robot_driver/IamPub: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/luis/Documents/726_Robot/devel/lib/robot_driver/IamPub: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/luis/Documents/726_Robot/devel/lib/robot_driver/IamPub: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/luis/Documents/726_Robot/devel/lib/robot_driver/IamPub: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/luis/Documents/726_Robot/devel/lib/robot_driver/IamPub: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/luis/Documents/726_Robot/devel/lib/robot_driver/IamPub: robot_driver/CMakeFiles/IamPub.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luis/Documents/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/luis/Documents/726_Robot/devel/lib/robot_driver/IamPub"
-	cd /home/luis/Documents/726_Robot/build/robot_driver && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/IamPub.dir/link.txt --verbose=$(VERBOSE)
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/robot_driver/IamPub: robot_driver/CMakeFiles/IamPub.dir/src/IamPub.cpp.o
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/robot_driver/IamPub: robot_driver/CMakeFiles/IamPub.dir/build.make
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/robot_driver/IamPub: /opt/ros/kinetic/lib/libroscpp.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/robot_driver/IamPub: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/robot_driver/IamPub: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/robot_driver/IamPub: /opt/ros/kinetic/lib/librosconsole.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/robot_driver/IamPub: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/robot_driver/IamPub: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/robot_driver/IamPub: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/robot_driver/IamPub: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/robot_driver/IamPub: /opt/ros/kinetic/lib/libxmlrpcpp.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/robot_driver/IamPub: /opt/ros/kinetic/lib/libroscpp_serialization.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/robot_driver/IamPub: /opt/ros/kinetic/lib/librostime.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/robot_driver/IamPub: /opt/ros/kinetic/lib/libcpp_common.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/robot_driver/IamPub: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/robot_driver/IamPub: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/robot_driver/IamPub: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/robot_driver/IamPub: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/robot_driver/IamPub: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/robot_driver/IamPub: /usr/lib/x86_64-linux-gnu/libpthread.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/robot_driver/IamPub: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/robot_driver/IamPub: robot_driver/CMakeFiles/IamPub.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/robot_driver/IamPub"
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/robot_driver && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/IamPub.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-robot_driver/CMakeFiles/IamPub.dir/build: /home/luis/Documents/726_Robot/devel/lib/robot_driver/IamPub
+robot_driver/CMakeFiles/IamPub.dir/build: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/robot_driver/IamPub
 
 .PHONY : robot_driver/CMakeFiles/IamPub.dir/build
 
@@ -123,10 +123,10 @@ robot_driver/CMakeFiles/IamPub.dir/requires: robot_driver/CMakeFiles/IamPub.dir/
 .PHONY : robot_driver/CMakeFiles/IamPub.dir/requires
 
 robot_driver/CMakeFiles/IamPub.dir/clean:
-	cd /home/luis/Documents/726_Robot/build/robot_driver && $(CMAKE_COMMAND) -P CMakeFiles/IamPub.dir/cmake_clean.cmake
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/robot_driver && $(CMAKE_COMMAND) -P CMakeFiles/IamPub.dir/cmake_clean.cmake
 .PHONY : robot_driver/CMakeFiles/IamPub.dir/clean
 
 robot_driver/CMakeFiles/IamPub.dir/depend:
-	cd /home/luis/Documents/726_Robot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luis/Documents/726_Robot/src /home/luis/Documents/726_Robot/src/robot_driver /home/luis/Documents/726_Robot/build /home/luis/Documents/726_Robot/build/robot_driver /home/luis/Documents/726_Robot/build/robot_driver/CMakeFiles/IamPub.dir/DependInfo.cmake --color=$(COLOR)
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/robot_driver /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/robot_driver /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/robot_driver/CMakeFiles/IamPub.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : robot_driver/CMakeFiles/IamPub.dir/depend
 
