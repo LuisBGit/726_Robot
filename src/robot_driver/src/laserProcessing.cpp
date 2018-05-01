@@ -29,29 +29,29 @@ void laserScanCallback(const sensor_msgs::LaserScan::ConstPtr& laserScanData) {
     //ROS_INFO(" [%f] ", i * laserScanData->angle_increment * conv);
   }
 
+
+
+
+
   float startPoint = 0;
+  float endPoint = rangeDataNum - 1;
+  bool startFound = false;
+  bool endFound = false;
 
   //Find first point
-  for (int i = 1; i < rangeDataNum; ++i) {
+  for (int i = 1; i < rangeDataNum; i++) {
     float diff = laserScanData->ranges[i] - laserScanData->ranges[i - 1];
-    if (diff < -0.05) {
+
+    if (diff <= -0.05 && startFound == false) {
+      startFound = true;
       startPoint = i;
       //ROS_INFO("i: [%f], i -1: [%f]", laserScanData->ranges[i], laserScanData->ranges[i - 1]);
-      break;
+    } else if (diff >= 0.05 && endFound == false && startFound == true){
+      endFound = true;
+      endPoint = i - 1;
     }
 
   }
-  float endPoint = 0;
-  //Seems to be working without walls
-  for (int i = rangeDataNum - 2; i >= 0 ; --i) {
-    float diff = laserScanData->ranges[i] - laserScanData->ranges[i + 1];
-    if (diff < -0.05) {
-      endPoint = i;
-      break;
-    }
-    //ROS_INFO(" End Angle Differences: [%f]",diff);
-  }
-
 
 
   int slopeCheck = 0;
@@ -59,9 +59,32 @@ void laserScanCallback(const sensor_msgs::LaserScan::ConstPtr& laserScanData) {
   float startX = laserScanData->ranges[startPoint] * cos((laserScanData->angle_increment * startPoint));
   float endY = laserScanData->ranges[endPoint] * sin((laserScanData->angle_increment * endPoint));
   float endX = laserScanData->ranges[endPoint] * cos((laserScanData->angle_increment * endPoint));
+  ROS_INFO("Edges at [%f], [%f]", startPoint * laserScanData->angle_increment* conv, endPoint * laserScanData->angle_increment * conv);
+  ROS_INFO("Edges at element [%f], [%f]", startPoint, endPoint);
+  ROS_INFO("Length Start: [%f], End: [%f]", laserScanData->ranges[startPoint], laserScanData->ranges[endPoint]);
+  ROS_INFO("Start Coords [%f], [%f]", startX, startY);
+  ROS_INFO("End Coords [%f], [%f]", endX, endY);
 
+  if (startPoint > endPoint) {
+    ROS_INFO("Edges mixed up");
+  }
 
+  if (startFound == false ) {
+    ROS_INFO("A start edge was not found");
+  }
 
+  if (endFound == false) {
+    ROS_INFO("An end edge was not found");
+  }
+
+  //ROS_INFO("startX: [%f], endX: [%f]", startX, endX);
+  if ((fabs(startX - endX) > sqrt(2)) || (fabs(startX - endX) == 0) || startFound == false || endFound == false)
+ {
+   ROS_INFO("No OBJECT");
+ } else {
+   ROS_INFO("OBJECT");
+ }
+/*
   float slopeRef = fabs((closestY - startY) / (closestX - startX));
 
 
@@ -89,12 +112,10 @@ void laserScanCallback(const sensor_msgs::LaserScan::ConstPtr& laserScanData) {
 
 
 
-
+*/
 
   //ROS_INFO("Cloest Object is at Coordinate: [%f], [%f] at angle [%f] with distance of [%f]", closestX, closestY, angle, closest);
   //ROS_INFO("Angle Min = [%f], Angle Max = [%f], Angle Increment = [%f], Count numbers = [%f]", laserScanData->angle_min, laserScanData->angle_max, laserScanData->angle_increment,rangeDataNum);
-
-  //ROS_INFO("Edges at [%f], [%f]", startPoint * laserScanData->angle_increment* conv, endPoint * laserScanData->angle_increment * conv);
 
 }
 
