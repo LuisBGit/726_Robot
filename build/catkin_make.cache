@@ -1,2 +1,0 @@
-openslam_gmapping:robot_driver:slam_gmapping/gmapping:slam_gmapping/slam_gmapping
--DCATKIN_DEVEL_PREFIX=/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/devel -DCMAKE_INSTALL_PREFIX=/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/install -G Unix Makefiles

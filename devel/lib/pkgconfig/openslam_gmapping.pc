@@ -1,8 +1,0 @@
-prefix=/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/devel
-
-Name: openslam_gmapping
-Description: Description of openslam_gmapping
-Version: 0.1.2
-Cflags: -I/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/include
-Libs: -L/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/devel/lib -lgridfastslam -lscanmatcher -lsensor_base -lsensor_range -lsensor_odometry -lutils
-Requires: 
