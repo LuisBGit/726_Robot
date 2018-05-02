@@ -1,5 +1,6 @@
 # milliseconds per update step
 interval_sim 50
+resolution 0.0001
 
 window
 (
@@ -72,5 +73,17 @@ circle(
 
 rectangle(
   pose [3 3 0.000 45.000]
-  size [0.100 0.100 0.500]
+  size [0.100 0.10 0.500]
+)
+rectangle(
+  pose [-3 3 0.000 45.000]
+  size [0.300 0.30 0.500]
+)
+rectangle(
+  pose [3 -3 0.000 45.000]
+  size [0.500 0.50 0.500]
+)
+rectangle(
+  pose [-3 -3 0.000 45.000]
+  size [1.00 1.0 0.500]
 )

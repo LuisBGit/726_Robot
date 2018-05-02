@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"gmapping\"
 
-CXX_INCLUDES = -I/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/slam_gmapping/gmapping/src 
+CXX_INCLUDES = -I/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/slam_gmapping/gmapping/src 
 

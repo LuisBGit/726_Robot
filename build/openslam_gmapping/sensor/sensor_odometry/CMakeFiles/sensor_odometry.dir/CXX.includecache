@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/include/gmapping/sensor/sensor_base/sensor.h
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/include/gmapping/sensor/sensor_base/sensor.h
 string
 -
 map
 -
 
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/include/gmapping/sensor/sensor_base/sensorreading.h
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/include/gmapping/sensor/sensor_base/sensorreading.h
 sensor.h
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/include/gmapping/sensor/sensor_base/sensor.h
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/include/gmapping/sensor/sensor_base/sensor.h
 
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/include/gmapping/sensor/sensor_odometry/odometryreading.h
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/include/gmapping/sensor/sensor_odometry/odometryreading.h
 string.h
 -
 gmapping/sensor/sensor_base/sensorreading.h
@@ -24,15 +24,15 @@ gmapping/sensor/sensor_base/sensorreading.h
 gmapping/utils/point.h
 -
 odometrysensor.h
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/include/gmapping/sensor/sensor_odometry/odometrysensor.h
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/include/gmapping/sensor/sensor_odometry/odometrysensor.h
 
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/include/gmapping/sensor/sensor_odometry/odometrysensor.h
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/include/gmapping/sensor/sensor_odometry/odometrysensor.h
 string
 -
 gmapping/sensor/sensor_base/sensor.h
 -
 
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/include/gmapping/utils/gvalues.h
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/include/gmapping/utils/gvalues.h
 values.h
 -
 limits.h
@@ -42,7 +42,7 @@ math.h
 limits
 -
 
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/include/gmapping/utils/point.h
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/include/gmapping/utils/point.h
 assert.h
 -
 math.h
@@ -50,13 +50,13 @@ math.h
 iostream
 -
 gvalues.h
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/include/gmapping/utils/gvalues.h
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/include/gmapping/utils/gvalues.h
 
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/sensor/sensor_odometry/odometryreading.cpp
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/sensor/sensor_odometry/odometryreading.cpp
 gmapping/sensor/sensor_odometry/odometryreading.h
 -
 
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/sensor/sensor_odometry/odometrysensor.cpp
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/sensor/sensor_odometry/odometrysensor.cpp
 gmapping/sensor/sensor_odometry/odometrysensor.h
 -
 

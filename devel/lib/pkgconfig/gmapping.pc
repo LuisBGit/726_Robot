@@ -1,8 +1,8 @@
-prefix=/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel
+prefix=/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/devel
 
 Name: gmapping
 Description: Description of gmapping
 Version: 1.3.9
 Cflags: 
-Libs: -L/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib 
+Libs: -L/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/devel/lib 
 Requires: 

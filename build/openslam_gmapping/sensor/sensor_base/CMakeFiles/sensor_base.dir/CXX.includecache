@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/include/gmapping/sensor/sensor_base/sensor.h
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/include/gmapping/sensor/sensor_base/sensor.h
 string
 -
 map
 -
 
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/include/gmapping/sensor/sensor_base/sensorreading.h
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/include/gmapping/sensor/sensor_base/sensorreading.h
 sensor.h
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/include/gmapping/sensor/sensor_base/sensor.h
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/include/gmapping/sensor/sensor_base/sensor.h
 
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/sensor/sensor_base/sensor.cpp
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/sensor/sensor_base/sensor.cpp
 gmapping/sensor/sensor_base/sensor.h
 -
 
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/sensor/sensor_base/sensorreading.cpp
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/sensor/sensor_base/sensorreading.cpp
 gmapping/sensor/sensor_base/sensorreading.h
 -
 

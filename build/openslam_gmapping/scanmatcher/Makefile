@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src
+CMAKE_SOURCE_DIR = /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build
+CMAKE_BINARY_DIR = /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,14 +124,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(CMAKE_COMMAND) -E cmake_progress_start /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/scanmatcher/CMakeFiles/progress.marks
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 openslam_gmapping/scanmatcher/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles 0
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(CMAKE_COMMAND) -E cmake_progress_start /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build/CMakeFiles /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build/openslam_gmapping/scanmatcher/CMakeFiles/progress.marks
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 openslam_gmapping/scanmatcher/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 openslam_gmapping/scanmatcher/clean
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 openslam_gmapping/scanmatcher/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 openslam_gmapping/scanmatcher/preinstall
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 openslam_gmapping/scanmatcher/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 openslam_gmapping/scanmatcher/preinstall
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 openslam_gmapping/scanmatcher/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/rule:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/rule
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/rule
 .PHONY : openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/rule
 
 # Convenience name for target.
@@ -166,12 +166,12 @@ scanmatcher: openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/rule
 
 # fast build rule for target.
 scanmatcher/fast:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build
 .PHONY : scanmatcher/fast
 
 # Manual pre-install relink rule for target.
 scanmatcher/preinstall:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/preinstall
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/preinstall
 .PHONY : scanmatcher/preinstall
 
 eig3.o: eig3.cpp.o
@@ -180,7 +180,7 @@ eig3.o: eig3.cpp.o
 
 # target to build an object file
 eig3.cpp.o:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/eig3.cpp.o
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/eig3.cpp.o
 .PHONY : eig3.cpp.o
 
 eig3.i: eig3.cpp.i
@@ -189,7 +189,7 @@ eig3.i: eig3.cpp.i
 
 # target to preprocess a source file
 eig3.cpp.i:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/eig3.cpp.i
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/eig3.cpp.i
 .PHONY : eig3.cpp.i
 
 eig3.s: eig3.cpp.s
@@ -198,7 +198,7 @@ eig3.s: eig3.cpp.s
 
 # target to generate assembly for a file
 eig3.cpp.s:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/eig3.cpp.s
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/eig3.cpp.s
 .PHONY : eig3.cpp.s
 
 scanmatcher.o: scanmatcher.cpp.o
@@ -207,7 +207,7 @@ scanmatcher.o: scanmatcher.cpp.o
 
 # target to build an object file
 scanmatcher.cpp.o:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcher.cpp.o
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcher.cpp.o
 .PHONY : scanmatcher.cpp.o
 
 scanmatcher.i: scanmatcher.cpp.i
@@ -216,7 +216,7 @@ scanmatcher.i: scanmatcher.cpp.i
 
 # target to preprocess a source file
 scanmatcher.cpp.i:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcher.cpp.i
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcher.cpp.i
 .PHONY : scanmatcher.cpp.i
 
 scanmatcher.s: scanmatcher.cpp.s
@@ -225,7 +225,7 @@ scanmatcher.s: scanmatcher.cpp.s
 
 # target to generate assembly for a file
 scanmatcher.cpp.s:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcher.cpp.s
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcher.cpp.s
 .PHONY : scanmatcher.cpp.s
 
 scanmatcherprocessor.o: scanmatcherprocessor.cpp.o
@@ -234,7 +234,7 @@ scanmatcherprocessor.o: scanmatcherprocessor.cpp.o
 
 # target to build an object file
 scanmatcherprocessor.cpp.o:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcherprocessor.cpp.o
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcherprocessor.cpp.o
 .PHONY : scanmatcherprocessor.cpp.o
 
 scanmatcherprocessor.i: scanmatcherprocessor.cpp.i
@@ -243,7 +243,7 @@ scanmatcherprocessor.i: scanmatcherprocessor.cpp.i
 
 # target to preprocess a source file
 scanmatcherprocessor.cpp.i:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcherprocessor.cpp.i
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcherprocessor.cpp.i
 .PHONY : scanmatcherprocessor.cpp.i
 
 scanmatcherprocessor.s: scanmatcherprocessor.cpp.s
@@ -252,7 +252,7 @@ scanmatcherprocessor.s: scanmatcherprocessor.cpp.s
 
 # target to generate assembly for a file
 scanmatcherprocessor.cpp.s:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcherprocessor.cpp.s
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcherprocessor.cpp.s
 .PHONY : scanmatcherprocessor.cpp.s
 
 smmap.o: smmap.cpp.o
@@ -261,7 +261,7 @@ smmap.o: smmap.cpp.o
 
 # target to build an object file
 smmap.cpp.o:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/smmap.cpp.o
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/smmap.cpp.o
 .PHONY : smmap.cpp.o
 
 smmap.i: smmap.cpp.i
@@ -270,7 +270,7 @@ smmap.i: smmap.cpp.i
 
 # target to preprocess a source file
 smmap.cpp.i:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/smmap.cpp.i
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/smmap.cpp.i
 .PHONY : smmap.cpp.i
 
 smmap.s: smmap.cpp.s
@@ -279,7 +279,7 @@ smmap.s: smmap.cpp.s
 
 # target to generate assembly for a file
 smmap.cpp.s:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/smmap.cpp.s
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/build.make openslam_gmapping/scanmatcher/CMakeFiles/scanmatcher.dir/smmap.cpp.s
 .PHONY : smmap.cpp.s
 
 # Help Target
@@ -318,6 +318,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
