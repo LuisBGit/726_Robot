@@ -3,8 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.o"
   "CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.o"
   "CMakeFiles/gridfastslam.dir/motionmodel.cpp.o"
-  "/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/workspaceHolder/desktop_workspace/devel/lib/libgridfastslam.pdb"
-  "/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/workspaceHolder/desktop_workspace/devel/lib/libgridfastslam.so"
+  "/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/devel/lib/libgridfastslam.pdb"
+  "/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/devel/lib/libgridfastslam.so"
 )
 
 # Per-language clean rules from dependency scanning.

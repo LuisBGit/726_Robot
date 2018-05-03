@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -DROS_BUILD_SHARED_LIBS=1 -Dsensor_base_EXPORTS
 
-CXX_INCLUDES = -I/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/workspaceHolder/desktop_workspace/src/openslam_gmapping/include -I/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/workspaceHolder/desktop_workspace/src/openslam_gmapping/sensor/sensor_base/. 
+CXX_INCLUDES = -I/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/include -I/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/sensor/sensor_base/. 
 
