@@ -67,14 +67,14 @@ set(openslam_gmapping_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(openslam_gmapping_SOURCE_PREFIX /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping)
-  set(openslam_gmapping_DEVEL_PREFIX /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel)
+  set(openslam_gmapping_SOURCE_PREFIX /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping)
+  set(openslam_gmapping_DEVEL_PREFIX /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/devel)
   set(openslam_gmapping_INSTALL_PREFIX "")
   set(openslam_gmapping_PREFIX ${openslam_gmapping_DEVEL_PREFIX})
 else()
   set(openslam_gmapping_SOURCE_PREFIX "")
   set(openslam_gmapping_DEVEL_PREFIX "")
-  set(openslam_gmapping_INSTALL_PREFIX /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/install)
+  set(openslam_gmapping_INSTALL_PREFIX /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/install)
   set(openslam_gmapping_PREFIX ${openslam_gmapping_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(openslam_gmapping_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/include " STREQUAL " ")
+if(NOT "/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/include " STREQUAL " ")
   set(openslam_gmapping_INCLUDE_DIRS "")
-  set(_include_dirs "/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/include")
+  set(_include_dirs "/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/include")
   if(NOT "https://github.com/ros-perception/openslam_gmapping/issues " STREQUAL " ")
     set(_report "Check the issue tracker 'https://github.com/ros-perception/openslam_gmapping/issues' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://openslam.org/gmapping " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/
         message(FATAL_ERROR "Project 'openslam_gmapping' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'openslam_gmapping' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'openslam_gmapping' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/${idir}'.  ${_report}")
     endif()
     _list_append_unique(openslam_gmapping_INCLUDE_DIRS ${include})
   endforeach()
@@ -129,7 +129,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/devel/lib;/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

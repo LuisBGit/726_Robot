@@ -27,8 +27,5 @@
 
 	<node pkg="rviz" type="rviz" name="rviz" />
 
-	<node pkg="robot_driver" type="IamPub" name="IamPub" />
-	<node pkg="robot_driver" type="IamSub" name="IamSub" />
-
 
 </launch>

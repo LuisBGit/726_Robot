@@ -10,9 +10,6 @@
 	</node>
 
 
-	<node pkg="robot_driver" type="IamPub" name="IamPub" />
-	<node pkg="robot_driver" type="IamSub" name="IamSub" />
-
 
 
 </launch>

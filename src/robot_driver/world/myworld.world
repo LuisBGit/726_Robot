@@ -3,7 +3,7 @@ interval_sim 50
 
 # define a model for the pole object
 define pole model
-(  
+(
   size [0.1 0.1 0.5]
   color "random"
 )
@@ -36,7 +36,7 @@ define myRobot position
 (
     size [0.46 0.46 0.25]
     drive "diff"
-    myLaser(pose [ 0.28 0 -0.2 0 ])  
+    myLaser(pose [ 0.28 0 -0.2 0 ])
 )
 
 # place the robot in the map
@@ -53,5 +53,3 @@ border( pose [ 0.75 -1 0 90 ] )
 border( pose [ 2.5 2.5 0 0 ] )
 border( pose [ 0.75 4 0 90 ] )
 border( pose [ -1.5 2.5 0 0 ] )
-
-

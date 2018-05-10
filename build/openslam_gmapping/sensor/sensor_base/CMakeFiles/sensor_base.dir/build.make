@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src
+CMAKE_SOURCE_DIR = /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build
+CMAKE_BINARY_DIR = /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build
 
 # Include any dependencies generated for this target.
 include openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/depend.make
@@ -58,17 +58,17 @@ include openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/progress
 include openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/flags.make
 
 openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.o: openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/flags.make
-openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.o: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/sensor/sensor_base/sensor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.o"
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/sensor/sensor_base && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sensor_base.dir/sensor.cpp.o -c /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/sensor/sensor_base/sensor.cpp
+openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.o: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/sensor/sensor_base/sensor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.o"
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build/openslam_gmapping/sensor/sensor_base && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sensor_base.dir/sensor.cpp.o -c /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/sensor/sensor_base/sensor.cpp
 
 openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sensor_base.dir/sensor.cpp.i"
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/sensor/sensor_base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/sensor/sensor_base/sensor.cpp > CMakeFiles/sensor_base.dir/sensor.cpp.i
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build/openslam_gmapping/sensor/sensor_base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/sensor/sensor_base/sensor.cpp > CMakeFiles/sensor_base.dir/sensor.cpp.i
 
 openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sensor_base.dir/sensor.cpp.s"
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/sensor/sensor_base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/sensor/sensor_base/sensor.cpp -o CMakeFiles/sensor_base.dir/sensor.cpp.s
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build/openslam_gmapping/sensor/sensor_base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/sensor/sensor_base/sensor.cpp -o CMakeFiles/sensor_base.dir/sensor.cpp.s
 
 openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.o.requires:
 
@@ -82,17 +82,17 @@ openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.o.pro
 
 
 openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensorreading.cpp.o: openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/flags.make
-openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensorreading.cpp.o: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/sensor/sensor_base/sensorreading.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensorreading.cpp.o"
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/sensor/sensor_base && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sensor_base.dir/sensorreading.cpp.o -c /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/sensor/sensor_base/sensorreading.cpp
+openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensorreading.cpp.o: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/sensor/sensor_base/sensorreading.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensorreading.cpp.o"
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build/openslam_gmapping/sensor/sensor_base && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sensor_base.dir/sensorreading.cpp.o -c /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/sensor/sensor_base/sensorreading.cpp
 
 openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensorreading.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sensor_base.dir/sensorreading.cpp.i"
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/sensor/sensor_base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/sensor/sensor_base/sensorreading.cpp > CMakeFiles/sensor_base.dir/sensorreading.cpp.i
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build/openslam_gmapping/sensor/sensor_base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/sensor/sensor_base/sensorreading.cpp > CMakeFiles/sensor_base.dir/sensorreading.cpp.i
 
 openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensorreading.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sensor_base.dir/sensorreading.cpp.s"
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/sensor/sensor_base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/sensor/sensor_base/sensorreading.cpp -o CMakeFiles/sensor_base.dir/sensorreading.cpp.s
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build/openslam_gmapping/sensor/sensor_base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/sensor/sensor_base/sensorreading.cpp -o CMakeFiles/sensor_base.dir/sensorreading.cpp.s
 
 openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensorreading.cpp.o.requires:
 
@@ -113,15 +113,15 @@ sensor_base_OBJECTS = \
 # External object files for target sensor_base
 sensor_base_EXTERNAL_OBJECTS =
 
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libsensor_base.so: openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.o
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libsensor_base.so: openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensorreading.cpp.o
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libsensor_base.so: openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/build.make
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libsensor_base.so: openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libsensor_base.so"
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/sensor/sensor_base && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sensor_base.dir/link.txt --verbose=$(VERBOSE)
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/devel/lib/libsensor_base.so: openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.o
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/devel/lib/libsensor_base.so: openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/sensorreading.cpp.o
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/devel/lib/libsensor_base.so: openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/build.make
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/devel/lib/libsensor_base.so: openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/devel/lib/libsensor_base.so"
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build/openslam_gmapping/sensor/sensor_base && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sensor_base.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/build: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/devel/lib/libsensor_base.so
+openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/build: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/devel/lib/libsensor_base.so
 
 .PHONY : openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/build
 
@@ -131,10 +131,10 @@ openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/requires: opensl
 .PHONY : openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/requires
 
 openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/clean:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/sensor/sensor_base && $(CMAKE_COMMAND) -P CMakeFiles/sensor_base.dir/cmake_clean.cmake
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build/openslam_gmapping/sensor/sensor_base && $(CMAKE_COMMAND) -P CMakeFiles/sensor_base.dir/cmake_clean.cmake
 .PHONY : openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/clean
 
 openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/depend:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/src/openslam_gmapping/sensor/sensor_base /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/sensor/sensor_base /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/726_Robot/build/openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/DependInfo.cmake --color=$(COLOR)
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/sensor/sensor_base /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build/openslam_gmapping/sensor/sensor_base /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build/openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : openslam_gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/depend
 
