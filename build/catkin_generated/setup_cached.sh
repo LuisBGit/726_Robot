@@ -7,4 +7,6 @@
 # new environment variables
 
 # modified environment variables
+export LD_LIBRARY_PATH="/opt/ros/kinetic/lib"
+export PKG_CONFIG_PATH="/opt/ros/kinetic/lib/pkgconfig"
 export PWD="/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build"

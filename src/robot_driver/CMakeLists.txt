@@ -134,7 +134,7 @@ add_executable(IamSub src/IamSub.cpp)
 target_link_libraries(IamSub ${catkin_LIBRARIES})
 add_dependencies(IamSub ${catkin_EXPORTED_TARGETS})
 
-add_executable(dataProcess src/laserProcessing.cpp)
+add_executable(dataProcess src/laserProcessingV2.cpp)
 target_link_libraries(dataProcess ${catkin_LIBRARIES})
 add_dependencies(dataProcess ${catkin_EXPORTED_TARGETS})
 

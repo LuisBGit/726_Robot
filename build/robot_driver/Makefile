@@ -504,32 +504,32 @@ src/IamSub.cpp.s:
 	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamSub.dir/build.make robot_driver/CMakeFiles/IamSub.dir/src/IamSub.cpp.s
 .PHONY : src/IamSub.cpp.s
 
-src/laserProcessing.o: src/laserProcessing.cpp.o
+src/laserProcessingV2.o: src/laserProcessingV2.cpp.o
 
-.PHONY : src/laserProcessing.o
+.PHONY : src/laserProcessingV2.o
 
 # target to build an object file
-src/laserProcessing.cpp.o:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/dataProcess.dir/build.make robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.o
-.PHONY : src/laserProcessing.cpp.o
+src/laserProcessingV2.cpp.o:
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/dataProcess.dir/build.make robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessingV2.cpp.o
+.PHONY : src/laserProcessingV2.cpp.o
 
-src/laserProcessing.i: src/laserProcessing.cpp.i
+src/laserProcessingV2.i: src/laserProcessingV2.cpp.i
 
-.PHONY : src/laserProcessing.i
+.PHONY : src/laserProcessingV2.i
 
 # target to preprocess a source file
-src/laserProcessing.cpp.i:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/dataProcess.dir/build.make robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.i
-.PHONY : src/laserProcessing.cpp.i
+src/laserProcessingV2.cpp.i:
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/dataProcess.dir/build.make robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessingV2.cpp.i
+.PHONY : src/laserProcessingV2.cpp.i
 
-src/laserProcessing.s: src/laserProcessing.cpp.s
+src/laserProcessingV2.s: src/laserProcessingV2.cpp.s
 
-.PHONY : src/laserProcessing.s
+.PHONY : src/laserProcessingV2.s
 
 # target to generate assembly for a file
-src/laserProcessing.cpp.s:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/dataProcess.dir/build.make robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.s
-.PHONY : src/laserProcessing.cpp.s
+src/laserProcessingV2.cpp.s:
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/dataProcess.dir/build.make robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessingV2.cpp.s
+.PHONY : src/laserProcessingV2.cpp.s
 
 src/pioneerLaser.o: src/pioneerLaser.cpp.o
 
@@ -596,9 +596,9 @@ help:
 	@echo "... src/IamSub.o"
 	@echo "... src/IamSub.i"
 	@echo "... src/IamSub.s"
-	@echo "... src/laserProcessing.o"
-	@echo "... src/laserProcessing.i"
-	@echo "... src/laserProcessing.s"
+	@echo "... src/laserProcessingV2.o"
+	@echo "... src/laserProcessingV2.i"
+	@echo "... src/laserProcessingV2.s"
 	@echo "... src/pioneerLaser.o"
 	@echo "... src/pioneerLaser.i"
 	@echo "... src/pioneerLaser.s"

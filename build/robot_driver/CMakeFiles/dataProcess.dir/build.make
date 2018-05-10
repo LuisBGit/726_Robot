@@ -57,38 +57,38 @@ include robot_driver/CMakeFiles/dataProcess.dir/progress.make
 # Include the compile flags for this target's objects.
 include robot_driver/CMakeFiles/dataProcess.dir/flags.make
 
-robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.o: robot_driver/CMakeFiles/dataProcess.dir/flags.make
-robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.o: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/robot_driver/src/laserProcessing.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.o"
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build/robot_driver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.o -c /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/robot_driver/src/laserProcessing.cpp
+robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessingV2.cpp.o: robot_driver/CMakeFiles/dataProcess.dir/flags.make
+robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessingV2.cpp.o: /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/robot_driver/src/laserProcessingV2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessingV2.cpp.o"
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build/robot_driver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dataProcess.dir/src/laserProcessingV2.cpp.o -c /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/robot_driver/src/laserProcessingV2.cpp
 
-robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.i"
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build/robot_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/robot_driver/src/laserProcessing.cpp > CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.i
+robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessingV2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dataProcess.dir/src/laserProcessingV2.cpp.i"
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build/robot_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/robot_driver/src/laserProcessingV2.cpp > CMakeFiles/dataProcess.dir/src/laserProcessingV2.cpp.i
 
-robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.s"
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build/robot_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/robot_driver/src/laserProcessing.cpp -o CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.s
+robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessingV2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dataProcess.dir/src/laserProcessingV2.cpp.s"
+	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build/robot_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/robot_driver/src/laserProcessingV2.cpp -o CMakeFiles/dataProcess.dir/src/laserProcessingV2.cpp.s
 
-robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.o.requires:
+robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessingV2.cpp.o.requires:
 
-.PHONY : robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.o.requires
+.PHONY : robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessingV2.cpp.o.requires
 
-robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.o.provides: robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.o.requires
-	$(MAKE) -f robot_driver/CMakeFiles/dataProcess.dir/build.make robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.o.provides.build
-.PHONY : robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.o.provides
+robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessingV2.cpp.o.provides: robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessingV2.cpp.o.requires
+	$(MAKE) -f robot_driver/CMakeFiles/dataProcess.dir/build.make robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessingV2.cpp.o.provides.build
+.PHONY : robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessingV2.cpp.o.provides
 
-robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.o.provides.build: robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.o
+robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessingV2.cpp.o.provides.build: robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessingV2.cpp.o
 
 
 # Object files for target dataProcess
 dataProcess_OBJECTS = \
-"CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.o"
+"CMakeFiles/dataProcess.dir/src/laserProcessingV2.cpp.o"
 
 # External object files for target dataProcess
 dataProcess_EXTERNAL_OBJECTS =
 
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/devel/lib/robot_driver/dataProcess: robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.o
+/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/devel/lib/robot_driver/dataProcess: robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessingV2.cpp.o
 /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/devel/lib/robot_driver/dataProcess: robot_driver/CMakeFiles/dataProcess.dir/build.make
 /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/devel/lib/robot_driver/dataProcess: /opt/ros/kinetic/lib/libroscpp.so
 /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/devel/lib/robot_driver/dataProcess: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
@@ -118,7 +118,7 @@ robot_driver/CMakeFiles/dataProcess.dir/build: /afs/ec.auckland.ac.nz/users/l/b/
 
 .PHONY : robot_driver/CMakeFiles/dataProcess.dir/build
 
-robot_driver/CMakeFiles/dataProcess.dir/requires: robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessing.cpp.o.requires
+robot_driver/CMakeFiles/dataProcess.dir/requires: robot_driver/CMakeFiles/dataProcess.dir/src/laserProcessingV2.cpp.o.requires
 
 .PHONY : robot_driver/CMakeFiles/dataProcess.dir/requires
 
