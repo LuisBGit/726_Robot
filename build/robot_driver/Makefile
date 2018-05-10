@@ -78,17 +78,6 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -99,6 +88,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target test
 test:
@@ -331,21 +331,6 @@ roscpp_generate_messages_nodejs/fast:
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 # Convenience name for target.
-robot_driver/CMakeFiles/IamPub.dir/rule:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/IamPub.dir/rule
-.PHONY : robot_driver/CMakeFiles/IamPub.dir/rule
-
-# Convenience name for target.
-IamPub: robot_driver/CMakeFiles/IamPub.dir/rule
-
-.PHONY : IamPub
-
-# fast build rule for target.
-IamPub/fast:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamPub.dir/build.make robot_driver/CMakeFiles/IamPub.dir/build
-.PHONY : IamPub/fast
-
-# Convenience name for target.
 robot_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
 	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : robot_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
@@ -406,21 +391,6 @@ pioneer_laser_node/fast:
 .PHONY : pioneer_laser_node/fast
 
 # Convenience name for target.
-robot_driver/CMakeFiles/IamSub.dir/rule:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/IamSub.dir/rule
-.PHONY : robot_driver/CMakeFiles/IamSub.dir/rule
-
-# Convenience name for target.
-IamSub: robot_driver/CMakeFiles/IamSub.dir/rule
-
-.PHONY : IamSub
-
-# fast build rule for target.
-IamSub/fast:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamSub.dir/build.make robot_driver/CMakeFiles/IamSub.dir/build
-.PHONY : IamSub/fast
-
-# Convenience name for target.
 robot_driver/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
 	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f CMakeFiles/Makefile2 robot_driver/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 .PHONY : robot_driver/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
@@ -449,60 +419,6 @@ dataProcess: robot_driver/CMakeFiles/dataProcess.dir/rule
 dataProcess/fast:
 	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/dataProcess.dir/build.make robot_driver/CMakeFiles/dataProcess.dir/build
 .PHONY : dataProcess/fast
-
-src/IamPub.o: src/IamPub.cpp.o
-
-.PHONY : src/IamPub.o
-
-# target to build an object file
-src/IamPub.cpp.o:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamPub.dir/build.make robot_driver/CMakeFiles/IamPub.dir/src/IamPub.cpp.o
-.PHONY : src/IamPub.cpp.o
-
-src/IamPub.i: src/IamPub.cpp.i
-
-.PHONY : src/IamPub.i
-
-# target to preprocess a source file
-src/IamPub.cpp.i:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamPub.dir/build.make robot_driver/CMakeFiles/IamPub.dir/src/IamPub.cpp.i
-.PHONY : src/IamPub.cpp.i
-
-src/IamPub.s: src/IamPub.cpp.s
-
-.PHONY : src/IamPub.s
-
-# target to generate assembly for a file
-src/IamPub.cpp.s:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamPub.dir/build.make robot_driver/CMakeFiles/IamPub.dir/src/IamPub.cpp.s
-.PHONY : src/IamPub.cpp.s
-
-src/IamSub.o: src/IamSub.cpp.o
-
-.PHONY : src/IamSub.o
-
-# target to build an object file
-src/IamSub.cpp.o:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamSub.dir/build.make robot_driver/CMakeFiles/IamSub.dir/src/IamSub.cpp.o
-.PHONY : src/IamSub.cpp.o
-
-src/IamSub.i: src/IamSub.cpp.i
-
-.PHONY : src/IamSub.i
-
-# target to preprocess a source file
-src/IamSub.cpp.i:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamSub.dir/build.make robot_driver/CMakeFiles/IamSub.dir/src/IamSub.cpp.i
-.PHONY : src/IamSub.cpp.i
-
-src/IamSub.s: src/IamSub.cpp.s
-
-.PHONY : src/IamSub.s
-
-# target to generate assembly for a file
-src/IamSub.cpp.s:
-	cd /afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/IamSub.dir/build.make robot_driver/CMakeFiles/IamSub.dir/src/IamSub.cpp.s
-.PHONY : src/IamSub.cpp.s
 
 src/laserProcessingV2.o: src/laserProcessingV2.cpp.o
 
@@ -566,12 +482,12 @@ help:
 	@echo "... depend"
 	@echo "... list_install_components"
 	@echo "... install"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... edit_cache"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
+	@echo "... rebuild_cache"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_cpp"
@@ -579,23 +495,15 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_nodejs"
-	@echo "... IamPub"
 	@echo "... test"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... pioneer_laser_node"
 	@echo "... install/local"
-	@echo "... IamSub"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... dataProcess"
 	@echo "... install/strip"
-	@echo "... src/IamPub.o"
-	@echo "... src/IamPub.i"
-	@echo "... src/IamPub.s"
-	@echo "... src/IamSub.o"
-	@echo "... src/IamSub.i"
-	@echo "... src/IamSub.s"
 	@echo "... src/laserProcessingV2.o"
 	@echo "... src/laserProcessingV2.i"
 	@echo "... src/laserProcessingV2.s"
