@@ -25,7 +25,7 @@ float getMagnitude(float x, float y) {
 	return sqrt((x*x) + (y*y));
 }
 
-//Find the X and Y coordinates based on laser data
+//Find the X and Y coordinates based on laser data not local x and y
 void findXY(float length, float angle, float &x, float &y) {
   x =  length * cos(angle);
   y = length * sin(angle);
@@ -48,7 +48,6 @@ float gradientFinder(float length1, float length2, float angle1, float angle2) {
   findXY(length2, angle2, x2, y2);
 
   float gradient = fabs((y2 - y1)/(x2 - x1));
-  //ROS_INFO("Gradient: [%f], start Gradient: [%f], end Gradient: [%f]", gradient, refStart, refEnd);
   return gradient;
 
 }
@@ -62,7 +61,7 @@ bool within(float value, float compare, float percent) {
   }
 }
 
-//Detects if an object is present
+//Detects if an object is present, finds two corners via the change in lengths
 bool objectDetection(const sensor_msgs::LaserScan::ConstPtr& laserScanData, float size, int &startPoint, int &endPoint) {
   bool startFound = false;
   bool endFound = false;
@@ -102,7 +101,7 @@ bool objectDetection(const sensor_msgs::LaserScan::ConstPtr& laserScanData, floa
     return false;
   }
 }
-//Finds the closest point of the robot
+//Finds the closest point of the robot by finding shorest length
 int getClosestPoint(const sensor_msgs::LaserScan::ConstPtr& laserScanData, float size, int &startPoint, int &endPoint) {
   int closestPoint = startPoint;
   float closestLength, closestAngle, closestX, closestY;
@@ -119,7 +118,7 @@ int getClosestPoint(const sensor_msgs::LaserScan::ConstPtr& laserScanData, float
   return closestPoint;
 }
 
-//Detects what shape it is using a gradient check
+//Detects what shape it is using a gradient check if linear then it is a container
 shape shapeDetection(const sensor_msgs::LaserScan::ConstPtr& laserScanData, float size, int &startPoint, int &endPoint) {
   int startCheck = 0;
   int endCheck = 0;
@@ -153,7 +152,7 @@ shape shapeDetection(const sensor_msgs::LaserScan::ConstPtr& laserScanData, floa
   }
 
 }
-//Retrieves the dimensions of the rectangle
+//Retrieves the dimensions of the rectangle subtracts the closest point from the end points and gets magnitude
 void rectangleDimensions(const sensor_msgs::LaserScan::ConstPtr& laserScanData, float size, float &width, float &length, int &startPoint, int &endPoint) {
   int closestPoint = getClosestPoint(laserScanData, size, startPoint, endPoint);
   float closestLength, closestAngle, closestX, closestY;
@@ -173,7 +172,7 @@ void rectangleDimensions(const sensor_msgs::LaserScan::ConstPtr& laserScanData, 
   }
 
 }
-//Gets the radius of the circle
+//Gets the radius of the circle by using chord length calcs
 void circleDimensions(const sensor_msgs::LaserScan::ConstPtr& laserScanData, float size, float &radius, int &startPoint, int &endPoint) {
   int closestPoint = getClosestPoint(laserScanData, size, startPoint, endPoint);
   float closestLength, closestAngle, closestX, closestY;
@@ -198,7 +197,9 @@ void laserScanCallback(const sensor_msgs::LaserScan::ConstPtr& laserScanData) {
 
   bool result = objectDetection(laserScanData, rangeDataNum, startPoint, endPoint);
   if (result) {
-    ROS_INFO("OBJECT FOUND!! - ID: [%d]", 1);
+	//An object has been found, ID it 
+    ROS_INFO("OBJECT FOUND!! - ID: %d", 1);
+	//Shape detection of the object
     object = shapeDetection(laserScanData,rangeDataNum, startPoint, endPoint);
     int closestPoint = getClosestPoint(laserScanData, rangeDataNum, startPoint, endPoint);
     float closestLength, closestAngle, closestX, closestY;
@@ -208,19 +209,20 @@ void laserScanCallback(const sensor_msgs::LaserScan::ConstPtr& laserScanData) {
     getParams(laserScanData, startPoint, startLength, startAngle, startX, startY);
     getParams(laserScanData, endPoint, endLength, endAngle, endX, endY);
     getParams(laserScanData, closestPoint, closestLength, closestAngle, closestX, closestY);
+	//Appropriate dimension and coordinate output
     if (object == Container) {
       float length, width;
       rectangleDimensions(laserScanData, rangeDataNum, width, length, startPoint, endPoint);
       localX = ((startY + endY) / 2) + yOffset;
       localY = (startX + endX)/ 2;
 
-      ROS_INFO("Type: Container, Length: [%.2f], Width: [%.2f], X: [%.2f], Y: [%.2f] ", length, width, localX, localY);
+      ROS_INFO("Type: Container, Length: %.2fcm, Width: %.2fcm, X: %.2f, Y: %.2f ", length * 100, width * 100, localX, localY);
     } else {
       float radius;
       circleDimensions(laserScanData, rangeDataNum, radius, startPoint, endPoint);
       localX = closestY + radius + yOffset;
       localY = (startX + endX)/ 2;
-      ROS_INFO("Type: Barrel, Radius: [%.2f], X: [%.2f], Y: [%.2f]", radius, localX, localY);
+      ROS_INFO("Type: Barrel, Radius: [%.2f]cm, X: [%.2f], Y: [%.2f]", radius * 100, localX, localY);
     }
 
   } else {

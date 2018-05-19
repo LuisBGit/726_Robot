@@ -126,13 +126,7 @@ target_link_libraries(pioneer_laser_node ${catkin_LIBRARIES})
 add_dependencies(pioneer_laser_node ${catkin_EXPORTED_TARGETS})
 
 
-add_executable(IamPub src/IamPub.cpp)
-target_link_libraries(IamPub ${catkin_LIBRARIES})
-add_dependencies(IamPub ${catkin_EXPORTED_TARGETS})
 
-add_executable(IamSub src/IamSub.cpp)
-target_link_libraries(IamSub ${catkin_LIBRARIES})
-add_dependencies(IamSub ${catkin_EXPORTED_TARGETS})
 
 add_executable(dataProcess src/laserProcessingV2.cpp)
 target_link_libraries(dataProcess ${catkin_LIBRARIES})

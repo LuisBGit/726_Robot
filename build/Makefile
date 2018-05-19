@@ -517,19 +517,6 @@ roscpp_generate_messages_nodejs/fast:
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named IamPub
-
-# Build rule for target.
-IamPub: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 IamPub
-.PHONY : IamPub
-
-# fast build rule for target.
-IamPub/fast:
-	$(MAKE) -f robot_driver/CMakeFiles/IamPub.dir/build.make robot_driver/CMakeFiles/IamPub.dir/build
-.PHONY : IamPub/fast
-
-#=============================================================================
 # Target rules for targets named roscpp_generate_messages_lisp
 
 # Build rule for target.
@@ -580,19 +567,6 @@ pioneer_laser_node: cmake_check_build_system
 pioneer_laser_node/fast:
 	$(MAKE) -f robot_driver/CMakeFiles/pioneer_laser_node.dir/build.make robot_driver/CMakeFiles/pioneer_laser_node.dir/build
 .PHONY : pioneer_laser_node/fast
-
-#=============================================================================
-# Target rules for targets named IamSub
-
-# Build rule for target.
-IamSub: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 IamSub
-.PHONY : IamSub
-
-# fast build rule for target.
-IamSub/fast:
-	$(MAKE) -f robot_driver/CMakeFiles/IamSub.dir/build.make robot_driver/CMakeFiles/IamSub.dir/build
-.PHONY : IamSub/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_nodejs
@@ -1596,12 +1570,10 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_nodejs"
-	@echo "... IamPub"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... pioneer_laser_node"
-	@echo "... IamSub"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... dataProcess"
 	@echo "... _run_tests_gmapping_rostest_test_basic_localization_upside_down.launch"
