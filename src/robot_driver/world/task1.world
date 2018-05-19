@@ -1,6 +1,6 @@
 # milliseconds per update step
 interval_sim 50
-resolution 0.001
+resolution 0.01
 
 window
 (
@@ -24,7 +24,7 @@ define marker model
 )
 
 define rectangle model
-(  
+(
   color "random"
 )
 
@@ -53,7 +53,7 @@ define myRobot position
 (
     size [0.460 0.460 0.250]
     drive "diff"
-    myLaser(pose [ 0.280 0.000 -0.200 0.000 ])  
+    myLaser(pose [ 0.280 0.000 -0.200 0.000 ])
 )
 
 # throw in a robot
@@ -68,4 +68,3 @@ circle(
 pose [0 0 0 0]
 size [0.76 0.76 0.500]
 )
-

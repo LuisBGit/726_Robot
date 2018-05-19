@@ -1,8 +1,8 @@
-prefix=/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/install
+prefix=/home/luis/Desktop/GitWorkSpace/726_Robot/install
 
 Name: robot_driver
 Description: Description of robot_driver
 Version: 0.0.0
 Cflags: 
-Libs: -L/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/install/lib 
+Libs: -L/home/luis/Desktop/GitWorkSpace/726_Robot/install/lib 
 Requires: 

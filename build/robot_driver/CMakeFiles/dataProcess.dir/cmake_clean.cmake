@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/dataProcess.dir/src/laserProcessingV2.cpp.o"
-  "/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/devel/lib/robot_driver/dataProcess.pdb"
-  "/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/devel/lib/robot_driver/dataProcess"
+  "/home/luis/Desktop/GitWorkSpace/726_Robot/devel/lib/robot_driver/dataProcess.pdb"
+  "/home/luis/Desktop/GitWorkSpace/726_Robot/devel/lib/robot_driver/dataProcess"
 )
 
 # Per-language clean rules from dependency scanning.

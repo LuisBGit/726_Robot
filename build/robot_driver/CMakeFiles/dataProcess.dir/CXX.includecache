@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/robot_driver/src/laserProcessingV2.cpp
+/home/luis/Desktop/GitWorkSpace/726_Robot/src/robot_driver/src/laserProcessingV2.cpp
 ros/ros.h
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/robot_driver/src/ros/ros.h
+/home/luis/Desktop/GitWorkSpace/726_Robot/src/robot_driver/src/ros/ros.h
 std_msgs/String.h
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/robot_driver/src/std_msgs/String.h
+/home/luis/Desktop/GitWorkSpace/726_Robot/src/robot_driver/src/std_msgs/String.h
 sensor_msgs/LaserScan.h
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/robot_driver/src/sensor_msgs/LaserScan.h
+/home/luis/Desktop/GitWorkSpace/726_Robot/src/robot_driver/src/sensor_msgs/LaserScan.h
 math.h
-/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/robot_driver/src/math.h
+/home/luis/Desktop/GitWorkSpace/726_Robot/src/robot_driver/src/math.h
 iostream
 -
 string

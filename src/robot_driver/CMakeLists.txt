@@ -121,11 +121,9 @@ include_directories(
 #   src/${PROJECT_NAME}/robot_driver.cpp
 # )
 
-add_executable( pioneer_laser_node src/pioneerLaser.cpp)
-target_link_libraries(pioneer_laser_node ${catkin_LIBRARIES})
-add_dependencies(pioneer_laser_node ${catkin_EXPORTED_TARGETS})
-
-
+add_executable( movement src/movement.cpp src/SystemFSM.cpp)
+target_link_libraries(movement ${catkin_LIBRARIES})
+add_dependencies(movement ${catkin_EXPORTED_TARGETS})
 
 
 add_executable(dataProcess src/laserProcessingV2.cpp)

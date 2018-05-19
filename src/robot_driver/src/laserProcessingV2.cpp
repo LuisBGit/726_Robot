@@ -12,9 +12,6 @@
 
 #define PI 3.14159265
 
-float refStart= 0;
-float refEnd = 0;
-
 enum shape {
   Barrel,
   Container
@@ -197,7 +194,7 @@ void laserScanCallback(const sensor_msgs::LaserScan::ConstPtr& laserScanData) {
 
   bool result = objectDetection(laserScanData, rangeDataNum, startPoint, endPoint);
   if (result) {
-	//An object has been found, ID it 
+	//An object has been found, ID it
     ROS_INFO("OBJECT FOUND!! - ID: %d", 1);
 	//Shape detection of the object
     object = shapeDetection(laserScanData,rangeDataNum, startPoint, endPoint);

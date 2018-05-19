@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "robot_driver"
-PROJECT_SPACE_DIR = "/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/install"
+PROJECT_SPACE_DIR = "/home/luis/Desktop/GitWorkSpace/726_Robot/install"
 PROJECT_VERSION = "0.0.0"

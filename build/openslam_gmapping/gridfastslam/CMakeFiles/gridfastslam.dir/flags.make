@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -DROS_BUILD_SHARED_LIBS=1 -Dgridfastslam_EXPORTS
 
-CXX_INCLUDES = -I/afs/ec.auckland.ac.nz/users/l/b/lbor550/unixhome/Desktop/GitWorkspace/726_Robot/src/openslam_gmapping/include 
+CXX_INCLUDES = -I/home/luis/Desktop/GitWorkSpace/726_Robot/src/openslam_gmapping/include 
 
