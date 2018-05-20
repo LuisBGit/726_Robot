@@ -121,7 +121,7 @@ include_directories(
 #   src/${PROJECT_NAME}/robot_driver.cpp
 # )
 
-add_executable( movement src/movement.cpp src/SystemFSM.cpp)
+add_executable( movement src/movement.cpp src/SystemFSM.cpp src/shapeDetectionFunctions.cpp)
 target_link_libraries(movement ${catkin_LIBRARIES})
 add_dependencies(movement ${catkin_EXPORTED_TARGETS})
 

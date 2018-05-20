@@ -24,20 +24,7 @@ float qw = 0;
 float x = 0;
 float y = 0;
 float yaw = 0;
-/*
-enum moveSequence {
-	ANGLE,
-	LINEAR
-};
 
-
-enum STATE {
-	findWall,
-	findCorner,
-	loop,
-	done
-};
-*/
 int object = 0; //0 = none, 1 = object, 2 = wall
 
 STATE currentSTATE = findWall;
@@ -97,16 +84,22 @@ float control(float input, float feedBack, float kp) {
 void laserScanCallback(const sensor_msgs::LaserScan::ConstPtr& laserScanData)
 {
 	float rangeDataNum = 1 + (laserScanData->angle_max - laserScanData->angle_min)  / (laserScanData->angle_increment);
-	float count = 0;
 
+	//These two variables are clearances at approx robot width assuming robot witdth = 0.46
+	int clearCheck1 = 218;
+	int clearCheck2 = 293;
 	int startPoint = 0;
 	int endPoint = 0;
 
-	for (int i = 0; i < rangeDataNum; i++) {
+	for (int i = clearCheck1; i < clearCheck2+1; i++) {
 		if (laserScanData->ranges[i] < 1) {
-			//ROS_INFO("Something is too close");
-			velocityCommand.angular.z = 0;
-			velocityCommand.linear.x = 0;
+			ROS_INFO("Something is too close");
+			if (objectDetection(laserScanData, rangeDataNum,startPoint, endPoint)) {
+					ROS_INFO("OBSTACLE Detected");
+					currentSTATE = dodgeObstacle();
+			} else {
+				ROS_INFO("NOT an Obstacle");
+			}
 		}
 	}
 
@@ -114,16 +107,7 @@ void laserScanCallback(const sensor_msgs::LaserScan::ConstPtr& laserScanData)
 
 void positions(const nav_msgs::Odometry::ConstPtr& msg)
 {
-	//Print the odom data structure
-	//Message sequence
-	/*ROS_INFO("Seq: [%d]", msg->header.seq);
-	//Position
-	ROS_INFO("Position-> x: [%f], y: [%f], z: [%f]", msg->pose.pose.position.x,msg->pose.pose.position.y, msg->pose.pose.position.z);
-	//Orientation
-	ROS_INFO("Orientation-> x: [%f], y: [%f], z: [%f], w: [%f]", msg->pose.pose.orientation.x, msg->pose.pose.orientation.y, msg->pose.pose.orientation.z, msg->pose.pose.orientation.w);
-	//Velocity
-	ROS_INFO("Vel-> Linear: [%f], Angular: [%f]", msg->twist.twist.linear.x,msg->twist.twist.angular.z);*/
-
+	//Updates the position of the robot w.r.t. world frame
 	qx = msg->pose.pose.orientation.x;
 	qy = msg->pose.pose.orientation.y;
   qz = msg->pose.pose.orientation.z;
@@ -133,62 +117,7 @@ void positions(const nav_msgs::Odometry::ConstPtr& msg)
 	y = msg->pose.pose.position.y;
 	yaw  = 0;
 	toEulerAngle(qx, qy, qz, qw, yaw);
-	//ROS_INFO("X: [%f], Y: [%f], Yaw: [%f]", x, y, yaw * conv);
 }
-
-/*void systemFSM() {
-	switch(currentSTATE) {
-		case(findWall):
-			velocityCommand.angular.z = control(90, yaw*conv, 0.01);
-			if (within(yaw*conv, 90, 2)) {
-				velocityCommand.angular.z = 0;
-				currentSTATE = findCorner;
-			}
-			break;
-		case(findCorner):
-			velocityCommand.linear.x = control(2, y, 0.5);
-			velocityCommand.angular.z = control(90, yaw*conv, 0.01);
-			if (within(y, 2, 2)) {
-				velocityCommand.angular.z = 0;
-				velocityCommand.linear.x = 0;
-				currentSTATE = loop;
-			}
-			break;
-		case(loop):
-			float checks[4] = {x, y, x, y};
-		//	ROS_INFO("Count[%d]", count);
-			if (count < 4) {
-				switch(currentMovement) {
-					case(ANGLE):
-						//ROS_INFO("ANGULAR MOTION");
-						velocityCommand.angular.z = control(loopYaw[count], yaw*conv, 0.01);
-						velocityCommand.linear.x = 0;
-						if (within(yaw*conv, loopYaw[count], 2)) {
-							//ROS_INFO("ANGLE DONE");
-							velocityCommand.angular.z = 0;
-							currentMovement = LINEAR;
-						}
-						break;
-
-					case(LINEAR):
-						//ROS_INFO("LINEAR MOTION");c file structure
-						velocityCommand.angular.z = control(loopYaw[count], yaw*conv, 0.01);
-						velocityCommand.linear.x = control(loopLinear[count], checks[count], 0.5);
-						if (within(checks[count], loopLinear[count], 2)) {
-							//ROS_INFO("LINEAR DONE");
-							velocityCommand.angular.z = 0;
-							velocityCommand.linear.x = 0;
-							currentMovement = ANGLE;
-							count++;
-						}
-						break;
-				}
-			}
-
-
-			break;
-	}
-}*/
 
 
 int main (int argc, char **argv)
@@ -199,12 +128,6 @@ int main (int argc, char **argv)
 	ros::Publisher vel_pub_object = my_handle.advertise<geometry_msgs::Twist>("/RosAria/cmd_vel",1);
 	ros::Subscriber sub = my_handle.subscribe("/odom", 1000, positions);
 	ros::Subscriber laser_sub_object = my_handle.subscribe("/scan", 1, laserScanCallback);
-
-	/*
-	subscribe to the scan topic and define a callback function to process the data
-	the call back function is called each time a new data is received from the topic
-	*/
-	//ros::Subscriber shapeMSG = my_handle.subscribe("/message", 1, shapeProcess);
 
 	ros::Rate loop_rate(10);// loop 10 Hz
 

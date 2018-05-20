@@ -37,7 +37,16 @@ enum STATE {
 	findWall,
 	findCorner,
 	loop,
-	done
+	dodge,
+  identify,
+  done
+};
+
+enum shape {
+  Barrel,
+  Container,
+  Unknown,
+  NotObject
 };
 
 
@@ -49,3 +58,34 @@ void systemFSM();
 static void toEulerAngle(float qx, float qy, float qz, float qw, float& yaw);
 bool within(float value, float compare, float percent);
 float control(float input, float feedBack, float kp);
+
+
+STATE findFirstWall();
+STATE findFirstCorner();
+STATE idealLoop();
+STATE dodgeObstacle();
+
+float getMagnitude(float x, float y);
+//Get absolute length of a vector
+float getMagnitude(float x, float y);
+//Find the X and Y coordinates based on laser data not local x and y
+void findXY(float length, float angle, float &x, float &y);
+//Get lenght, angle, x and y of a point
+void getParams(const sensor_msgs::LaserScan::ConstPtr& laserScanData, int point, float &length, float &angle, float &x, float &y);
+//Finds a gradient between two points
+float gradientFinder(float length1, float length2, float angle1, float angle2);
+
+//checks if withinTolerance a percentage value
+bool withinTolerance(float value, float compare, float percent);
+//Detects if an object is present, finds two corners via the change in lengths
+bool objectDetection(const sensor_msgs::LaserScan::ConstPtr& laserScanData, float size, int &startPoint, int &endPoint);
+//Finds the closest point of the robot by finding shorest length
+int getClosestPoint(const sensor_msgs::LaserScan::ConstPtr& laserScanData, float size, int &startPoint, int &endPoint);
+//Detects what shape it is using a gradient check if linear then it is a container
+shape shapeDetection(const sensor_msgs::LaserScan::ConstPtr& laserScanData, float size, int &startPoint, int &endPoint);
+//Retrieves the dimensions of the rectangle subtracts the closest point from the end points and gets magnitude
+void rectangleDimensions(const sensor_msgs::LaserScan::ConstPtr& laserScanData, float size, float &width, float &length, int &startPoint, int &endPoint);
+//Gets the radius of the circle by using chord length calcs
+void circleDimensions(const sensor_msgs::LaserScan::ConstPtr& laserScanData, float size, float &radius, int &startPoint, int &endPoint);
+
+shape objectDetectionV2(const sensor_msgs::LaserScan::ConstPtr& laserScanData, float size, int &startPoint, int &endPoint);

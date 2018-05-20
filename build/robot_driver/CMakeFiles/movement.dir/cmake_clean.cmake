@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/movement.dir/src/movement.cpp.o"
   "CMakeFiles/movement.dir/src/SystemFSM.cpp.o"
+  "CMakeFiles/movement.dir/src/shapeDetectionFunctions.cpp.o"
   "/home/luis/Desktop/GitWorkSpace/726_Robot/devel/lib/robot_driver/movement.pdb"
   "/home/luis/Desktop/GitWorkSpace/726_Robot/devel/lib/robot_driver/movement"
 )

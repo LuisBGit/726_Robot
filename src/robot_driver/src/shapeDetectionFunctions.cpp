@@ -7,10 +7,6 @@
 
 #define PI 3.14159265
 
-enum shape {
-  Barrel,
-  Container
-};
 
 //Get absolute length of a vector
 float getMagnitude(float x, float y) {
@@ -75,8 +71,11 @@ bool objectDetection(const sensor_msgs::LaserScan::ConstPtr& laserScanData, floa
     } else if (((nextLength - currentLength) >= 0.05) && endFound == false) {
       endPoint = i;
       endFound = true;
-      }
     }
+
+  }
+
+
 
   if (startFound && endFound) {
     float startLength, startAngle, startX, startY;
@@ -85,11 +84,14 @@ bool objectDetection(const sensor_msgs::LaserScan::ConstPtr& laserScanData, floa
     getParams(laserScanData, endPoint, endLength, endAngle, endX, endY);
     float c = sqrt((startLength*startLength) + (endLength*endLength) - (2*startLength*endLength*cos((endPoint - startPoint) * laserScanData->angle_increment)));
     if (c == 0 || c > sqrt(2)) {
+      ROS_INFO("WALL");
       return false;
     } else {
+      ROS_INFO("OBSTACLE");
       return true;
     }
   } else {
+    ROS_INFO("NOTHING");
     return false;
   }
 }
@@ -108,6 +110,16 @@ int getClosestPoint(const sensor_msgs::LaserScan::ConstPtr& laserScanData, float
     }
   }
   return closestPoint;
+}
+
+shape objectDetectionV2(const sensor_msgs::LaserScan::ConstPtr& laserScanData, float size, int &startPoint, int &endPoint) {
+  float xArray[512];
+  float yArray[512];
+  for (int i = 0; i < size; i++) {
+    
+  }
+
+
 }
 
 //Detects what shape it is using a gradient check if linear then it is a container

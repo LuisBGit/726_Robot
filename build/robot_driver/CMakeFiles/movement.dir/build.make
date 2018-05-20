@@ -105,16 +105,42 @@ robot_driver/CMakeFiles/movement.dir/src/SystemFSM.cpp.o.provides: robot_driver/
 robot_driver/CMakeFiles/movement.dir/src/SystemFSM.cpp.o.provides.build: robot_driver/CMakeFiles/movement.dir/src/SystemFSM.cpp.o
 
 
+robot_driver/CMakeFiles/movement.dir/src/shapeDetectionFunctions.cpp.o: robot_driver/CMakeFiles/movement.dir/flags.make
+robot_driver/CMakeFiles/movement.dir/src/shapeDetectionFunctions.cpp.o: /home/luis/Desktop/GitWorkSpace/726_Robot/src/robot_driver/src/shapeDetectionFunctions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luis/Desktop/GitWorkSpace/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object robot_driver/CMakeFiles/movement.dir/src/shapeDetectionFunctions.cpp.o"
+	cd /home/luis/Desktop/GitWorkSpace/726_Robot/build/robot_driver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/movement.dir/src/shapeDetectionFunctions.cpp.o -c /home/luis/Desktop/GitWorkSpace/726_Robot/src/robot_driver/src/shapeDetectionFunctions.cpp
+
+robot_driver/CMakeFiles/movement.dir/src/shapeDetectionFunctions.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/movement.dir/src/shapeDetectionFunctions.cpp.i"
+	cd /home/luis/Desktop/GitWorkSpace/726_Robot/build/robot_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luis/Desktop/GitWorkSpace/726_Robot/src/robot_driver/src/shapeDetectionFunctions.cpp > CMakeFiles/movement.dir/src/shapeDetectionFunctions.cpp.i
+
+robot_driver/CMakeFiles/movement.dir/src/shapeDetectionFunctions.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/movement.dir/src/shapeDetectionFunctions.cpp.s"
+	cd /home/luis/Desktop/GitWorkSpace/726_Robot/build/robot_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luis/Desktop/GitWorkSpace/726_Robot/src/robot_driver/src/shapeDetectionFunctions.cpp -o CMakeFiles/movement.dir/src/shapeDetectionFunctions.cpp.s
+
+robot_driver/CMakeFiles/movement.dir/src/shapeDetectionFunctions.cpp.o.requires:
+
+.PHONY : robot_driver/CMakeFiles/movement.dir/src/shapeDetectionFunctions.cpp.o.requires
+
+robot_driver/CMakeFiles/movement.dir/src/shapeDetectionFunctions.cpp.o.provides: robot_driver/CMakeFiles/movement.dir/src/shapeDetectionFunctions.cpp.o.requires
+	$(MAKE) -f robot_driver/CMakeFiles/movement.dir/build.make robot_driver/CMakeFiles/movement.dir/src/shapeDetectionFunctions.cpp.o.provides.build
+.PHONY : robot_driver/CMakeFiles/movement.dir/src/shapeDetectionFunctions.cpp.o.provides
+
+robot_driver/CMakeFiles/movement.dir/src/shapeDetectionFunctions.cpp.o.provides.build: robot_driver/CMakeFiles/movement.dir/src/shapeDetectionFunctions.cpp.o
+
+
 # Object files for target movement
 movement_OBJECTS = \
 "CMakeFiles/movement.dir/src/movement.cpp.o" \
-"CMakeFiles/movement.dir/src/SystemFSM.cpp.o"
+"CMakeFiles/movement.dir/src/SystemFSM.cpp.o" \
+"CMakeFiles/movement.dir/src/shapeDetectionFunctions.cpp.o"
 
 # External object files for target movement
 movement_EXTERNAL_OBJECTS =
 
 /home/luis/Desktop/GitWorkSpace/726_Robot/devel/lib/robot_driver/movement: robot_driver/CMakeFiles/movement.dir/src/movement.cpp.o
 /home/luis/Desktop/GitWorkSpace/726_Robot/devel/lib/robot_driver/movement: robot_driver/CMakeFiles/movement.dir/src/SystemFSM.cpp.o
+/home/luis/Desktop/GitWorkSpace/726_Robot/devel/lib/robot_driver/movement: robot_driver/CMakeFiles/movement.dir/src/shapeDetectionFunctions.cpp.o
 /home/luis/Desktop/GitWorkSpace/726_Robot/devel/lib/robot_driver/movement: robot_driver/CMakeFiles/movement.dir/build.make
 /home/luis/Desktop/GitWorkSpace/726_Robot/devel/lib/robot_driver/movement: /opt/ros/kinetic/lib/libroscpp.so
 /home/luis/Desktop/GitWorkSpace/726_Robot/devel/lib/robot_driver/movement: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
@@ -136,7 +162,7 @@ movement_EXTERNAL_OBJECTS =
 /home/luis/Desktop/GitWorkSpace/726_Robot/devel/lib/robot_driver/movement: /usr/lib/x86_64-linux-gnu/libpthread.so
 /home/luis/Desktop/GitWorkSpace/726_Robot/devel/lib/robot_driver/movement: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
 /home/luis/Desktop/GitWorkSpace/726_Robot/devel/lib/robot_driver/movement: robot_driver/CMakeFiles/movement.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luis/Desktop/GitWorkSpace/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/luis/Desktop/GitWorkSpace/726_Robot/devel/lib/robot_driver/movement"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luis/Desktop/GitWorkSpace/726_Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable /home/luis/Desktop/GitWorkSpace/726_Robot/devel/lib/robot_driver/movement"
 	cd /home/luis/Desktop/GitWorkSpace/726_Robot/build/robot_driver && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/movement.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -146,6 +172,7 @@ robot_driver/CMakeFiles/movement.dir/build: /home/luis/Desktop/GitWorkSpace/726_
 
 robot_driver/CMakeFiles/movement.dir/requires: robot_driver/CMakeFiles/movement.dir/src/movement.cpp.o.requires
 robot_driver/CMakeFiles/movement.dir/requires: robot_driver/CMakeFiles/movement.dir/src/SystemFSM.cpp.o.requires
+robot_driver/CMakeFiles/movement.dir/requires: robot_driver/CMakeFiles/movement.dir/src/shapeDetectionFunctions.cpp.o.requires
 
 .PHONY : robot_driver/CMakeFiles/movement.dir/requires
 

@@ -30,6 +30,10 @@ std_msgs/Int8.h
 sensor_msgs/LaserScan.h
 /home/luis/Desktop/GitWorkSpace/726_Robot/src/robot_driver/src/sensor_msgs/LaserScan.h
 
+/home/luis/Desktop/GitWorkSpace/726_Robot/src/robot_driver/src/shapeDetectionFunctions.cpp
+movement.h
+/home/luis/Desktop/GitWorkSpace/726_Robot/src/robot_driver/src/movement.h
+
 /opt/ros/kinetic/include/geometry_msgs/Point.h
 string
 -

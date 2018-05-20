@@ -501,6 +501,33 @@ src/movement.cpp.s:
 	cd /home/luis/Desktop/GitWorkSpace/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/movement.dir/build.make robot_driver/CMakeFiles/movement.dir/src/movement.cpp.s
 .PHONY : src/movement.cpp.s
 
+src/shapeDetectionFunctions.o: src/shapeDetectionFunctions.cpp.o
+
+.PHONY : src/shapeDetectionFunctions.o
+
+# target to build an object file
+src/shapeDetectionFunctions.cpp.o:
+	cd /home/luis/Desktop/GitWorkSpace/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/movement.dir/build.make robot_driver/CMakeFiles/movement.dir/src/shapeDetectionFunctions.cpp.o
+.PHONY : src/shapeDetectionFunctions.cpp.o
+
+src/shapeDetectionFunctions.i: src/shapeDetectionFunctions.cpp.i
+
+.PHONY : src/shapeDetectionFunctions.i
+
+# target to preprocess a source file
+src/shapeDetectionFunctions.cpp.i:
+	cd /home/luis/Desktop/GitWorkSpace/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/movement.dir/build.make robot_driver/CMakeFiles/movement.dir/src/shapeDetectionFunctions.cpp.i
+.PHONY : src/shapeDetectionFunctions.cpp.i
+
+src/shapeDetectionFunctions.s: src/shapeDetectionFunctions.cpp.s
+
+.PHONY : src/shapeDetectionFunctions.s
+
+# target to generate assembly for a file
+src/shapeDetectionFunctions.cpp.s:
+	cd /home/luis/Desktop/GitWorkSpace/726_Robot/build && $(MAKE) -f robot_driver/CMakeFiles/movement.dir/build.make robot_driver/CMakeFiles/movement.dir/src/shapeDetectionFunctions.cpp.s
+.PHONY : src/shapeDetectionFunctions.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -540,6 +567,9 @@ help:
 	@echo "... src/movement.o"
 	@echo "... src/movement.i"
 	@echo "... src/movement.s"
+	@echo "... src/shapeDetectionFunctions.o"
+	@echo "... src/shapeDetectionFunctions.i"
+	@echo "... src/shapeDetectionFunctions.s"
 .PHONY : help
 
 
