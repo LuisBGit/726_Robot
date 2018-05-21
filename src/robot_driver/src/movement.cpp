@@ -80,27 +80,50 @@ float control(float input, float feedBack, float kp) {
 
 }
 
+int rAngle2Index(float angle, float increment) {
+	float index = angle / increment;
+	return index;
+}
+
+int dAngle2Index(float angle, float increment) {
+	float index = angle * (1/conv) / increment;
+	return index;
+}
+
+bool wallLeft(const sensor_msgs::LaserScan::ConstPtr& laserScanData, float size, float distance) {
+	float counter = 0;
+	for (int i = dAngle2Index(90, laserScanData->angle_increment); i < size; i++) {
+		float cX, cY;
+
+		findXY(laserScanData->ranges[i], laserScanData->angle_increment*i, cX, cY);
+		ROS_INFO("cX: [%f]", cX);
+		if (fabs(cX) < distance) {
+
+			counter++;
+		}
+	}
+
+	if (counter > dAngle2Index(180 - 90, laserScanData->angle_increment)) {
+		ROS_INFO("WALL Found");
+		return true;
+	} else {
+		return false;
+	}
+}
+
 void laserScanCallback(const sensor_msgs::LaserScan::ConstPtr& laserScanData)
 {
 	float rangeDataNum = 1 + (laserScanData->angle_max - laserScanData->angle_min)  / (laserScanData->angle_increment);
 
-	//These two variables are clearances at approx robot width assuming robot witdth = 0.46
+		//These two variables are clearances at approx robot width assuming robot witdth = 0.46
 	int clearCheck1 = 218;
 	int clearCheck2 = 293;
 	int startPoint = 0;
 	int endPoint = 0;
-
-	/*for (int i = clearCheck1; i < clearCheck2+1; i++) {
-		if (laserScanData->ranges[i] < 1) {
-			//ROS_INFO("Something is too close");
-			if (objectDetection(laserScanData, rangeDataNum,startPoint, endPoint)) {
-					//ROS_INFO("OBSTACLE Detected");
-					//currentSTATE = dodgeObstacle();
-			} else {
-				//ROS_INFO("NOT an Obstacle");
-			}
-		}
-	}*/
+	if (wallLeft(laserScanData, rangeDataNum, 1)) {
+		velocityCommand.angular.z = 0;
+		currentSTATE = loop;
+	}
 
 }
 

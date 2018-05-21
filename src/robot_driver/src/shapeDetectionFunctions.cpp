@@ -116,7 +116,7 @@ shape objectDetectionV2(const sensor_msgs::LaserScan::ConstPtr& laserScanData, f
   float xArray[512];
   float yArray[512];
   for (int i = 0; i < size; i++) {
-    
+
   }
 
 
