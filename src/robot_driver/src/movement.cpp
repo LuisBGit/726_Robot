@@ -12,9 +12,7 @@ To understand the sensor_msgs::LaserScan object look at
 http://docs.ros.org/api/sensor_msgs/html/msg/LaserScan.html
 */
 
-float loopX[4] = {9.0, 9.0, .0, 0.0};
-float loopY[4] = {0.0, 0.0, 0.0, 0.0};
-float loopYaw[4] = {0.0, -90.0, 180.0, 90.0};
+float loopYaw[5] = {0.0, -90.0, 180.0, 90.0, 0};
 float loopLinear[4] = {9, -2, 0, 2};
 
 float qx = 0;
@@ -24,6 +22,7 @@ float qw = 0;
 float x = 0;
 float y = 0;
 float yaw = 0;
+float refYaw = 0;
 
 int object = 0; //0 = none, 1 = object, 2 = wall
 
@@ -91,17 +90,17 @@ void laserScanCallback(const sensor_msgs::LaserScan::ConstPtr& laserScanData)
 	int startPoint = 0;
 	int endPoint = 0;
 
-	for (int i = clearCheck1; i < clearCheck2+1; i++) {
+	/*for (int i = clearCheck1; i < clearCheck2+1; i++) {
 		if (laserScanData->ranges[i] < 1) {
-			ROS_INFO("Something is too close");
+			//ROS_INFO("Something is too close");
 			if (objectDetection(laserScanData, rangeDataNum,startPoint, endPoint)) {
-					ROS_INFO("OBSTACLE Detected");
-					currentSTATE = dodgeObstacle();
+					//ROS_INFO("OBSTACLE Detected");
+					//currentSTATE = dodgeObstacle();
 			} else {
-				ROS_INFO("NOT an Obstacle");
+				//ROS_INFO("NOT an Obstacle");
 			}
 		}
-	}
+	}*/
 
 }
 

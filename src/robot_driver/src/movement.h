@@ -19,12 +19,13 @@ extern float qw;
 extern float x;
 extern float y;
 extern float yaw;
+extern float refYaw;
 extern geometry_msgs::Twist velocityCommand;
 
 
 extern float loopX[4];
 extern float loopY[4];
-extern float loopYaw[4];
+extern float loopYaw[5];
 extern float loopLinear[4];
 
 enum moveSequence {
@@ -39,7 +40,8 @@ enum STATE {
 	loop,
 	dodge,
   identify,
-  done
+  done,
+	suppressed
 };
 
 enum shape {
@@ -64,6 +66,7 @@ STATE findFirstWall();
 STATE findFirstCorner();
 STATE idealLoop();
 STATE dodgeObstacle();
+STATE suppressMovement();
 
 float getMagnitude(float x, float y);
 //Get absolute length of a vector
