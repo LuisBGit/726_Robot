@@ -28,7 +28,9 @@ enum state {
 enum lookState {
 	left,
 	right,
-	done,
+	strafe,
+	forward,
+	goBack,
 	noEscape
 };
 
@@ -46,8 +48,24 @@ float refYaw = 0;
 bool rotate = true;
 
 
+bool leftTrigger = false;
+bool rightTrigger = false;
+
+bool leftFree = false;
+bool rightFree = false;
+
+float lViewX = 0;
+float lViewY = 0;
+float rViewX = 0;
+float rViewY = 0;
+
+float frontDodgeX = 0;
+float frontDodgeY = 0;
+
 
 int object = 0; //0 = none, 1 = object, 2 = wall
+
+int stepCounter = 0;
 
 float idealPathX[12] = {0, 8, 8, 0, 1, 7, 7, 1, 2, 6, 6, 2};
 float idealPathY[12] = {2, 2, -2, -2, 1, 1, -1, -1, 0.5, 0.5, -0.5, -0.5};
@@ -83,7 +101,7 @@ float constrain(float value) {
 void local2Global(float lX, float lY, float theta, float &globeX, float &globeY, float posX, float posY) {
 	globeX = (lX * cos(theta/conv)) - (lY * sin(theta/conv)) + posX;
 	globeY = (lX* sin(theta/conv)) + (lY * cos(theta/conv)) + posY;
-	ROS_INFO("X:[%f], Y:[%f]", globeX, globeY);
+	//ROS_INFO("X:[%f], Y:[%f]", globeX, globeY);
 }
 
 bool withinLinear(float value, float compare, float percent) {
@@ -105,10 +123,10 @@ bool withinLinear(float value, float compare, float percent) {
 }
 
 bool withinRotate(float value, float compare, float percent) {
-	ROS_INFO("Angle Error [%f]", value);
+	//ROS_INFO("Angle Error [%f]", value);
 	if (compare == 0) {
 		if ((value >= -0.3 && value <= 0.3) || (value >= -0.3 && value <= 0.3)) {
-			ROS_INFO("TRUE");
+			//ROS_INFO("TRUE");
 			return true;
 		} else {
 			return false;
@@ -116,7 +134,7 @@ bool withinRotate(float value, float compare, float percent) {
 	}
 
   if (value >= (compare - (percent * compare/100)) && value <= (compare + (percent * compare/100))) {
-    ROS_INFO("TRUE");
+    //ROS_INFO("TRUE");
     return true;
   } else {
     return false;
@@ -133,6 +151,17 @@ float control(float input, float feedBack, float kp) {
 float linearControl(float input, float feedBack, float kp) {
 	float output = kp * (input - feedBack);
 	return constrain(fabs(output));
+}
+
+
+void linearFreeMove() {
+	velocityCommand.linear.x = 0.3;
+	velocityCommand.angular.y = 0;
+}
+
+void rotateFreeMove() {
+	velocityCommand.linear.x = 0;
+	velocityCommand.angular.y = 0.3;
 }
 
 //Rotate to Desired
@@ -177,20 +206,28 @@ bool moveTo(float x2, float y2) {
 	return false;
 }
 
-bool lookLeft() {
-	ROS_INFO("LOOKING LEFT");
-	float viewX = 0;
-	float viewY = 0;
-	local2Global(1, 0, yaw - 90, viewX, viewY, x, y);
-	rotateRobot(viewX, viewY);
+void lookLeft(bool &trigger) {
+	if (!trigger) {
+		//ROS_INFO("LOOKING LEFT");
+		/*float viewX = 0;
+		float viewY = 0;
+		local2Global(1, 0, yaw - 90, viewX, viewY, x, y);*/
+		if (rotateRobot(lViewX, lViewY)) {
+			trigger = true;
+		}
+	}
 }
 
-bool lookRight() {
-	ROS_INFO("LOOKING LEFT");
-	float viewX = 0;
-	float viewY = 0;
-	local2Global(-1, 0, yaw - 90, viewX, viewY, x, y);
-	rotateRobot(viewX, viewY);
+void lookRight(bool &trigger) {
+	if (!trigger) {
+		//ROS_INFO("LOOKING RIGHT");
+		/*float viewX = 0;
+		float viewY = 0;
+		local2Global(-1, 0, yaw - 90, viewX, viewY, x, y);*/
+		if (rotateRobot(rViewX, rViewY)) {
+			trigger = true;
+		}
+	}
 
 }
 
@@ -198,15 +235,54 @@ bool lookRight() {
 bool dodgeAlgo() {
 	switch (currentLook) {
 		case (left):
-			lookLeft();
+			lookLeft(leftTrigger);
 			break;
 
 		case (right):
-			lookRight();
+			lookRight(rightTrigger);
 			break;
 
-		case (done):
+		case (strafe):
 			ROS_INFO("ESCAPE FOUND");
+			if (moveTo(frontDodgeX, frontDodgeY)) {
+				velocityCommand.linear.x = 0;
+				velocityCommand.angular.z = 0;
+				currentLook = forward;
+				if (rightFree) {
+					local2Global(-2, 0, yaw - 90, frontDodgeX, frontDodgeY, x, y);
+				} else if (leftFree) {
+					local2Global(2, 0, yaw - 90, frontDodgeX, frontDodgeY, x, y);
+				}
+
+			}
+			break;
+		case (forward):
+			if (moveTo(frontDodgeX, frontDodgeY)) {
+				ROS_INFO("TRAVELLED AFTER DODGE");
+				velocityCommand.linear.x = 0;
+				velocityCommand.angular.z = 0;
+				currentLook = goBack;
+				if (rightFree) {
+					local2Global(-1.5, 0, yaw - 90, frontDodgeX, frontDodgeY, x, y);
+				} else if (leftFree) {
+					local2Global(1.5, 0, yaw - 90, frontDodgeX, frontDodgeY, x, y);
+				}
+			}
+			break;
+
+		case (goBack):
+			if (moveTo(frontDodgeX, frontDodgeY)) {
+				ROS_INFO("ReturnedtoPath");
+				velocityCommand.linear.x = 0;
+				velocityCommand.angular.z = 0;
+				currentState = Roam;
+				leftTrigger = false;
+				rightTrigger = false;
+				leftFree = false;
+				rightFree = false;
+				return true;
+			}
+
 			break;
 		case (noEscape):
 			ROS_INFO("NO ESCAPE");
@@ -214,19 +290,20 @@ bool dodgeAlgo() {
 
 
 	}
+
+	return false;
 }
 
 
-bool checkFront(const sensor_msgs::LaserScan::ConstPtr& laserScanData) {
+bool checkFront(const sensor_msgs::LaserScan::ConstPtr& laserScanData, float thresh) {
 	float rangeDataNum = 1 + (laserScanData->angle_max - laserScanData->angle_min)  / (laserScanData->angle_increment);
 
 	int clearCheck1 = 218;
 	int clearCheck2 = 293;
-	int startPoint = 0;
-	int endPoint = 0;
+
 
 	for (int i = clearCheck1; i < clearCheck2; i++) {
-			if (laserScanData->ranges[i] < 0.6) {
+			if (laserScanData->ranges[i] < thresh) {
 				return true;
 			}
 		}
@@ -238,29 +315,57 @@ bool checkFront(const sensor_msgs::LaserScan::ConstPtr& laserScanData) {
 
 void laserScanCallback(const sensor_msgs::LaserScan::ConstPtr& laserScanData)
 {
+
 	float rangeDataNum = 1 + (laserScanData->angle_max - laserScanData->angle_min)  / (laserScanData->angle_increment);
 
-	int clearCheck1 = 218;
-	int clearCheck2 = 293;
+
 	int startPoint = 0;
 	int endPoint = 0;
 
 	if (currentState == Roam) {
-		for (int i = clearCheck1; i < clearCheck2; i++) {
-			if (laserScanData->ranges[i] < 0.6) {
-				ROS_INFO("Something is too close");
-				if (objectDetection(laserScanData, rangeDataNum, startPoint, endPoint)) {
-					ROS_INFO("TIME TO DODGE");
-					currentState = Dodge;
-					velocityCommand.linear.x = 0;
-					velocityCommand.angular.z = 0;
-				}
+		if (checkFront(laserScanData, 0.6)) {
+			if (objectDetection(laserScanData, rangeDataNum, startPoint, endPoint)) {
+				ROS_INFO("TIME TO DODGE");
+				currentState = Dodge;
+				velocityCommand.linear.x = 0;
+				velocityCommand.angular.z = 0;
+				local2Global(1, 0, yaw - 90, rViewX, rViewY, x, y);
+				local2Global(-1, 0, yaw - 90, lViewX, lViewY, x, y);
 			}
 		}
-
 	} else if (currentState == Dodge) {
 		if (currentLook == left) {
-
+				if (leftTrigger) {
+					if (checkFront(laserScanData, 2)) {
+						//ROS_INFO("LEFT IS BLOCKED");
+						velocityCommand.linear.x = 0;
+						velocityCommand.angular.z = 0;
+						currentLook = right;
+					} else {
+						//ROS_INFO("LEFT IS FREE");
+						velocityCommand.linear.x = 0;
+						velocityCommand.angular.z = 0;
+						currentLook = strafe;
+						leftFree = true;
+						local2Global(0, 1.5, yaw - 90, frontDodgeX, frontDodgeY, x, y);
+					}
+				}
+		} else if (currentLook == rightTrigger) {
+			if (rightTrigger) {
+				if (checkFront(laserScanData, 2)) {
+					//ROS_INFO("RIGHT IS BLOCKED");
+					currentLook = noEscape;
+					velocityCommand.linear.x = 0;
+					velocityCommand.angular.z = 0;
+				} else {
+					//ROS_INFO("RIGHT IS FREE");
+					currentLook = strafe;
+					velocityCommand.linear.x = 0;
+					velocityCommand.angular.z = 0;
+					rightFree = true;
+					local2Global(0, 1.5, yaw - 90, frontDodgeX, frontDodgeY, x, y);
+				}
+			}
 		}
 	}
 
@@ -284,7 +389,7 @@ void positions(const nav_msgs::Odometry::ConstPtr& msg)
 
 
 state roaming() {
-	ROS_INFO("Moving to %f , %f", idealPathX[count], idealPathY[count]);
+	//ROS_INFO("Moving to %f , %f", idealPathX[count], idealPathY[count]);
 
 	if (moveTo(idealPathX[count], idealPathY[count])) {
 		count++;
@@ -298,9 +403,9 @@ state roaming() {
 }
 
 state dodging() {
-	ROS_INFO("DODGING");
-
-	dodgeAlgo();
+	//ROS_INFO("DODGING");
+	ROS_INFO("left trigger [%d], rightTrigger [%d]", leftTrigger, rightTrigger);
+	if (dodgeAlgo()) return Roam;
 	return Dodge;
 }
 
@@ -310,7 +415,7 @@ state scanning() {
 
 
 void loop() {
-	ROS_INFO("State [%d]", currentState);
+	//ROS_INFO("State [%d]", currentState);
 	switch (currentState) {
 		case (Roam):
 			currentState = roaming();
