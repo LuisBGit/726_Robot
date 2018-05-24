@@ -5,6 +5,8 @@
 #include "math.h"
 #include <std_msgs/Int8.h>
 #include "sensor_msgs/LaserScan.h"
+#include "shapeDetection.cpp"
+
 geometry_msgs::Twist velocityCommand;
 
 #define PI 3.14159265
@@ -23,7 +25,15 @@ enum state {
 	Scan
 };
 
+enum lookState {
+	left,
+	right,
+	done,
+	noEscape
+};
+
 state currentState = Roam;
+lookState currentLook = left;
 
 float qx = 0;
 float qy = 0;
@@ -35,9 +45,11 @@ float yaw = 0;
 float refYaw = 0;
 bool rotate = true;
 
+
+
 int object = 0; //0 = none, 1 = object, 2 = wall
 
-float idealPathX[12] = {0, 9, 9, 0, 1, 8, 8, 1, 2, 7, 7, 2};
+float idealPathX[12] = {0, 8, 8, 0, 1, 7, 7, 1, 2, 6, 6, 2};
 float idealPathY[12] = {2, 2, -2, -2, 1, 1, -1, -1, 0.5, 0.5, -0.5, -0.5};
 
 static void toEulerAngle(float qx, float qy, float qz, float qw, float& yaw) {
@@ -52,9 +64,29 @@ static void toEulerAngle(float qx, float qy, float qz, float qw, float& yaw) {
   }
 }
 
+float constrain(float value) {
+	if (value < 0) {
+		if (value < -0.5) {
+			return -0.5;
+		} else {
+			return value;
+		}
+	} else {
+		if (value > 0.5) {
+			return 0.5;
+		} else {
+			return value;
+		}
+	}
+}
 
+void local2Global(float lX, float lY, float theta, float &globeX, float &globeY, float posX, float posY) {
+	globeX = (lX * cos(theta/conv)) - (lY * sin(theta/conv)) + posX;
+	globeY = (lX* sin(theta/conv)) + (lY * cos(theta/conv)) + posY;
+	ROS_INFO("X:[%f], Y:[%f]", globeX, globeY);
+}
 
-bool within(float value, float compare, float percent) {
+bool withinLinear(float value, float compare, float percent) {
 	if (compare == 0) {
 		if (value >= -0.1 && value <= 0.1) {
 			ROS_INFO("TRUE");
@@ -75,7 +107,7 @@ bool within(float value, float compare, float percent) {
 bool withinRotate(float value, float compare, float percent) {
 	ROS_INFO("Angle Error [%f]", value);
 	if (compare == 0) {
-		if (value >= -0.2 && value <= 0.2) {
+		if ((value >= -0.3 && value <= 0.3) || (value >= -0.3 && value <= 0.3)) {
 			ROS_INFO("TRUE");
 			return true;
 		} else {
@@ -95,12 +127,12 @@ bool withinRotate(float value, float compare, float percent) {
 float control(float input, float feedBack, float kp) {
   //ROS_INFO("error [%f] ", input - feedBack);
 	float output = kp * (input - feedBack);
-	return (output);
+	return constrain(output);
 }
 //Linear Control
 float linearControl(float input, float feedBack, float kp) {
 	float output = kp * (input - feedBack);
-	return fabs(output);
+	return constrain(fabs(output));
 }
 
 //Rotate to Desired
@@ -125,7 +157,7 @@ bool linearRobot(float x2, float y2) {
 	float ySquare = (y2 - y) * (y2 - y);
 	float distanceTo = fabs(sqrt(xSquare + ySquare));
 	ROS_INFO("Distance Left [%f]", distanceTo);
-	if (!within(distanceTo, 0, 10)) {
+	if (!withinLinear(distanceTo, 0, 10)) {
 		velocityCommand.linear.x = linearControl(0, distanceTo, 0.5);
 		velocityCommand.angular.z = 0;
 		return false;
@@ -145,6 +177,62 @@ bool moveTo(float x2, float y2) {
 	return false;
 }
 
+bool lookLeft() {
+	ROS_INFO("LOOKING LEFT");
+	float viewX = 0;
+	float viewY = 0;
+	local2Global(1, 0, yaw - 90, viewX, viewY, x, y);
+	rotateRobot(viewX, viewY);
+}
+
+bool lookRight() {
+	ROS_INFO("LOOKING LEFT");
+	float viewX = 0;
+	float viewY = 0;
+	local2Global(-1, 0, yaw - 90, viewX, viewY, x, y);
+	rotateRobot(viewX, viewY);
+
+}
+
+
+bool dodgeAlgo() {
+	switch (currentLook) {
+		case (left):
+			lookLeft();
+			break;
+
+		case (right):
+			lookRight();
+			break;
+
+		case (done):
+			ROS_INFO("ESCAPE FOUND");
+			break;
+		case (noEscape):
+			ROS_INFO("NO ESCAPE");
+			break;
+
+
+	}
+}
+
+
+bool checkFront(const sensor_msgs::LaserScan::ConstPtr& laserScanData) {
+	float rangeDataNum = 1 + (laserScanData->angle_max - laserScanData->angle_min)  / (laserScanData->angle_increment);
+
+	int clearCheck1 = 218;
+	int clearCheck2 = 293;
+	int startPoint = 0;
+	int endPoint = 0;
+
+	for (int i = clearCheck1; i < clearCheck2; i++) {
+			if (laserScanData->ranges[i] < 0.6) {
+				return true;
+			}
+		}
+
+	return false;
+}
 
 
 
@@ -156,6 +244,26 @@ void laserScanCallback(const sensor_msgs::LaserScan::ConstPtr& laserScanData)
 	int clearCheck2 = 293;
 	int startPoint = 0;
 	int endPoint = 0;
+
+	if (currentState == Roam) {
+		for (int i = clearCheck1; i < clearCheck2; i++) {
+			if (laserScanData->ranges[i] < 0.6) {
+				ROS_INFO("Something is too close");
+				if (objectDetection(laserScanData, rangeDataNum, startPoint, endPoint)) {
+					ROS_INFO("TIME TO DODGE");
+					currentState = Dodge;
+					velocityCommand.linear.x = 0;
+					velocityCommand.angular.z = 0;
+				}
+			}
+		}
+
+	} else if (currentState == Dodge) {
+		if (currentLook == left) {
+
+		}
+	}
+
 
 
 }
@@ -171,7 +279,7 @@ void positions(const nav_msgs::Odometry::ConstPtr& msg)
 	y = msg->pose.pose.position.y;
 	yaw  = 0;
 	toEulerAngle(qx, qy, qz, qw, yaw);
-  ROS_INFO("YAW [%f]", yaw);
+  //ROS_INFO("YAW [%f]", yaw);
 }
 
 
@@ -190,8 +298,9 @@ state roaming() {
 }
 
 state dodging() {
+	ROS_INFO("DODGING");
 
-	
+	dodgeAlgo();
 	return Dodge;
 }
 
@@ -201,7 +310,7 @@ state scanning() {
 
 
 void loop() {
-
+	ROS_INFO("State [%d]", currentState);
 	switch (currentState) {
 		case (Roam):
 			currentState = roaming();
@@ -216,7 +325,7 @@ void loop() {
 			break;
 	}
 
-
+}
 
 
 int main (int argc, char **argv)
