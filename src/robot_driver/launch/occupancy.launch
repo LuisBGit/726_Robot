@@ -3,7 +3,7 @@
 
 
 
-	<node pkg="robot_driver" type="movement" name="movement" output="screen">
+	<node pkg="robot_driver" type="occu" name="occu" output="screen">
 		<remap from="RosAria/cmd_vel" to="cmd_vel"/>
 	</node>
 
