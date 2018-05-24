@@ -67,8 +67,11 @@ int object = 0; //0 = none, 1 = object, 2 = wall
 
 int stepCounter = 0;
 
-float idealPathX[12] = {0, 8, 8, 0, 1, 7, 7, 1, 2, 6, 6, 2};
-float idealPathY[12] = {2, 2, -2, -2, 1, 1, -1, -1, 0.5, 0.5, -0.5, -0.5};
+//float idealPathX[12] = {0, 8, 8, 0, 1, 7, 7, 1, 2, 6, 6, 2};
+//float idealPathY[12] = {2, 2, -2, -2, 1, 1, -1, -1, 0.5, 0.5, -0.5, -0.5};
+
+float idealPathX[7] = {0, 8, 8, 2, 3, 6, 2};
+float idealPathY[7] = {2, 2, -2, -2, 0, 0, 0};
 
 static void toEulerAngle(float qx, float qy, float qz, float qw, float& yaw) {
 	// yaw (z-axis rotation)
@@ -198,10 +201,16 @@ bool linearRobot(float x2, float y2) {
 }
 
 bool moveTo(float x2, float y2) {
-	if (rotateRobot(x2, y2)) {
-		if (linearRobot(x2, y2)) {
+	if (rotate == true && rotateRobot(x2, y2)) {
+		/*if (linearRobot(x2, y2)) {
 			return true;
-		}
+		}*/
+		rotate = false;
+	}
+
+	if ((rotate == false) && linearRobot(x2, y2) ) {
+		rotate = true;
+		return true;
 	}
 	return false;
 }
@@ -243,7 +252,7 @@ bool dodgeAlgo() {
 			break;
 
 		case (strafe):
-			ROS_INFO("ESCAPE FOUND");
+			//ROS_INFO("ESCAPE FOUND");
 			if (moveTo(frontDodgeX, frontDodgeY)) {
 				velocityCommand.linear.x = 0;
 				velocityCommand.angular.z = 0;
@@ -258,7 +267,7 @@ bool dodgeAlgo() {
 			break;
 		case (forward):
 			if (moveTo(frontDodgeX, frontDodgeY)) {
-				ROS_INFO("TRAVELLED AFTER DODGE");
+				//ROS_INFO("TRAVELLED AFTER DODGE");
 				velocityCommand.linear.x = 0;
 				velocityCommand.angular.z = 0;
 				currentLook = goBack;
@@ -272,7 +281,7 @@ bool dodgeAlgo() {
 
 		case (goBack):
 			if (moveTo(frontDodgeX, frontDodgeY)) {
-				ROS_INFO("ReturnedtoPath");
+				//ROS_INFO("ReturnedtoPath");
 				velocityCommand.linear.x = 0;
 				velocityCommand.angular.z = 0;
 				currentState = Roam;
@@ -280,12 +289,13 @@ bool dodgeAlgo() {
 				rightTrigger = false;
 				leftFree = false;
 				rightFree = false;
+				currentLook = left;
 				return true;
 			}
 
 			break;
 		case (noEscape):
-			ROS_INFO("NO ESCAPE");
+			//ROS_INFO("NO ESCAPE");
 			break;
 
 
@@ -323,9 +333,9 @@ void laserScanCallback(const sensor_msgs::LaserScan::ConstPtr& laserScanData)
 	int endPoint = 0;
 
 	if (currentState == Roam) {
-		if (checkFront(laserScanData, 0.6)) {
+		if (checkFront(laserScanData, 0.7)) {
 			if (objectDetection(laserScanData, rangeDataNum, startPoint, endPoint)) {
-				ROS_INFO("TIME TO DODGE");
+				//ROS_INFO("TIME TO DODGE");
 				currentState = Dodge;
 				velocityCommand.linear.x = 0;
 				velocityCommand.angular.z = 0;
@@ -389,13 +399,13 @@ void positions(const nav_msgs::Odometry::ConstPtr& msg)
 
 
 state roaming() {
-	//ROS_INFO("Moving to %f , %f", idealPathX[count], idealPathY[count]);
+	ROS_INFO("Moving to %f , %f", idealPathX[count], idealPathY[count]);
 
 	if (moveTo(idealPathX[count], idealPathY[count])) {
 		count++;
 	}
 
-	if (count > 12) {
+	if (count > 7) {
 		count = 0;
 	}
 
@@ -404,7 +414,7 @@ state roaming() {
 
 state dodging() {
 	//ROS_INFO("DODGING");
-	ROS_INFO("left trigger [%d], rightTrigger [%d]", leftTrigger, rightTrigger);
+	//ROS_INFO("left trigger [%d], rightTrigger [%d]", leftTrigger, rightTrigger);
 	if (dodgeAlgo()) return Roam;
 	return Dodge;
 }
